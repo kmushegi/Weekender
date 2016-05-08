@@ -215,6 +215,42 @@
             </objects>
             <point key="canvasLocation" x="1132" y="539"/>
         </scene>
+        <!--Wellness Tips Modal View Controller-->
+        <scene sceneID="e5V-ib-lBt">
+            <objects>
+                <viewController id="Pkv-86-LFN" customClass="WellnessTipsModalViewController" customModule="Weekender" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SW0-fZ-e7K"/>
+                        <viewControllerLayoutGuide type="bottom" id="pY6-pV-h5K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Qn-tL-Srn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qY7-jZ-yeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016" y="105"/>
+        </scene>
+        <!--Assistance Modal View Controller-->
+        <scene sceneID="ZJ6-lH-66j">
+            <objects>
+                <viewController id="aUm-Li-nJd" customClass="AssistanceModalViewController" customModule="Weekender" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y4c-6j-A3I"/>
+                        <viewControllerLayoutGuide type="bottom" id="bA7-83-Utf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K5k-wp-D8T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l18-yZ-pTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016" y="825"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="gnk-0i-9vo">
             <objects>

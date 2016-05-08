@@ -33,6 +33,7 @@ class ContactsWellnessViewController: UIViewController {
         addSecurityNonEmergency()
         addPub()
         addWellness()
+        addAssistingOthers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,6 +84,7 @@ class ContactsWellnessViewController: UIViewController {
         assistingOthersButton!.backgroundColor = UIColor.purpleColor()
         assistingOthersButton?.setTitle(c.assistanceTitle, forState: .Normal)
         assistingOthersButton?.addTarget(self, action: #selector(ContactsWellnessViewController.assistanceSegue), forControlEvents: .TouchUpInside)
+        contactsView.addSubview(assistingOthersButton!)
         
     }
     
@@ -99,11 +101,11 @@ class ContactsWellnessViewController: UIViewController {
     }
     
     @objc private func wellnessSegue(sender: UIButton!) {
-        performSegueWithIdentifier("wellness", sender: sender)
+        presentViewController(WellnessTipsModalViewController(), animated: true, completion: nil)
     }
     
     @objc private func assistanceSegue(sender: UIButton!) {
-        performSegueWithIdentifier("assistance", sender: sender)
+        presentViewController(AssistanceModalViewController(), animated: true, completion: nil)
     }
     
     private func setUpButton(button: UIButton) {
