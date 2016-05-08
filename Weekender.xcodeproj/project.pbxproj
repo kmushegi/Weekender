@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A51C77321CDC16BE00FD455B /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C77311CDC16BE00FD455B /* Spotify.framework */; };
+		A51C77341CDC17C400FD455B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C77331CDC17C400FD455B /* AVFoundation.framework */; };
+		A51C77361CDC17D500FD455B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C77351CDC17D500FD455B /* SystemConfiguration.framework */; };
+		A51C773D1CDC1E8100FD455B /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C773C1CDC1E8100FD455B /* MusicViewController.swift */; };
+		A57A3D391CD2915A00F82427 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A3D381CD2915A00F82427 /* UserDefaults.swift */; };
+		A5C72A621CCFEDD100DABD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */; };
+		A5C72A641CCFEDD100DABD75 /* DrinkCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */; };
+		A5C72A661CCFEDD100DABD75 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A651CCFEDD100DABD75 /* CameraViewController.swift */; };
+		A5C72A6B1CCFEDD100DABD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A6A1CCFEDD100DABD75 /* Assets.xcassets */; };
+		A5C72A791CCFEDD100DABD75 /* WeekenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A781CCFEDD100DABD75 /* WeekenderTests.swift */; };
+		A5C72A841CCFEDD100DABD75 /* WeekenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A831CCFEDD100DABD75 /* WeekenderUITests.swift */; };
+		A5C72A961CCFF2BA00DABD75 /* bkgd-blue-long.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A931CCFF2BA00DABD75 /* bkgd-blue-long.png */; };
+		A5C72A971CCFF2BA00DABD75 /* bkgd-blue-short.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A941CCFF2BA00DABD75 /* bkgd-blue-short.png */; };
+		A5C72A981CCFF2BA00DABD75 /* bkgd-blue-short@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A951CCFF2BA00DABD75 /* bkgd-blue-short@2x.png */; };
+		A5C72A9A1CCFFF0300DABD75 /* BACalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A991CCFFF0300DABD75 /* BACalculator.swift */; };
+		A5C72A9D1CCFFFE500DABD75 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A9C1CCFFFE500DABD75 /* SettingsViewController.swift */; };
+		A5E266E41CDFBEB80053E0CD /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266E31CDFBEB80053E0CD /* ContactsViewController.swift */; };
+		A5E266E61CDFC00E0053E0CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266E51CDFC00E0053E0CD /* Constants.swift */; };
+		A5E266E81CDFE1400053E0CD /* mobile2016.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266E71CDFE1400053E0CD /* mobile2016.png */; };
+		A5E266EA1CDFE1460053E0CD /* searlesOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266E91CDFE1460053E0CD /* searlesOverlay.png */; };
+		A5E266EC1CDFE14B0053E0CD /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266EB1CDFE14B0053E0CD /* empty.png */; };
+		A5E266EE1CDFE1550053E0CD /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266ED1CDFE1550053E0CD /* exit.png */; };
+		A5E266F01CDFE15C0053E0CD /* flipCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266EF1CDFE15C0053E0CD /* flipCamera.png */; };
+		A5E266F21CDFE1660053E0CD /* shoot.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266F11CDFE1660053E0CD /* shoot.png */; };
+		A5F15D841CDA37C400C38345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F15D821CDA37C400C38345 /* LaunchScreen.storyboard */; };
+		A5F15D901CDA425900C38345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F15D8E1CDA425900C38345 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5C72A751CCFEDD100DABD75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C72A561CCFEDD100DABD75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C72A5D1CCFEDD100DABD75;
+			remoteInfo = Weekender;
+		};
+		A5C72A801CCFEDD100DABD75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C72A561CCFEDD100DABD75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C72A5D1CCFEDD100DABD75;
+			remoteInfo = Weekender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A51C77311CDC16BE00FD455B /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		A51C77331CDC17C400FD455B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A51C77351CDC17D500FD455B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A51C77381CDC1B7700FD455B /* Weekender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weekender-Bridging-Header.h"; sourceTree = "<group>"; };
+		A51C773C1CDC1E8100FD455B /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicViewController.swift; path = Weekender/MusicViewController.swift; sourceTree = "<group>"; };
+		A57A3D381CD2915A00F82427 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		A5C72A5E1CCFEDD100DABD75 /* Weekender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weekender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCounterViewController.swift; sourceTree = "<group>"; };
+		A5C72A651CCFEDD100DABD75 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A5C72A6A1CCFEDD100DABD75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C72A6F1CCFEDD100DABD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C72A741CCFEDD100DABD75 /* WeekenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C72A781CCFEDD100DABD75 /* WeekenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekenderTests.swift; sourceTree = "<group>"; };
+		A5C72A7A1CCFEDD100DABD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C72A7F1CCFEDD100DABD75 /* WeekenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C72A831CCFEDD100DABD75 /* WeekenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekenderUITests.swift; sourceTree = "<group>"; };
+		A5C72A851CCFEDD100DABD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C72A931CCFF2BA00DABD75 /* bkgd-blue-long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-long.png"; path = "../../../bkgd-blue-long.png"; sourceTree = "<group>"; };
+		A5C72A941CCFF2BA00DABD75 /* bkgd-blue-short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-short.png"; path = "../../../bkgd-blue-short.png"; sourceTree = "<group>"; };
+		A5C72A951CCFF2BA00DABD75 /* bkgd-blue-short@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-short@2x.png"; path = "../../../bkgd-blue-short@2x.png"; sourceTree = "<group>"; };
+		A5C72A991CCFFF0300DABD75 /* BACalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACalculator.swift; sourceTree = "<group>"; };
+		A5C72A9C1CCFFFE500DABD75 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A5E266E31CDFBEB80053E0CD /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsViewController.swift; path = Weekender/ContactsViewController.swift; sourceTree = "<group>"; };
+		A5E266E51CDFC00E0053E0CD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5E266E71CDFE1400053E0CD /* mobile2016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mobile2016.png; path = Assets/mobile2016.png; sourceTree = "<group>"; };
+		A5E266E91CDFE1460053E0CD /* searlesOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searlesOverlay.png; path = Assets/searlesOverlay.png; sourceTree = "<group>"; };
+		A5E266EB1CDFE14B0053E0CD /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty.png; path = Assets/empty.png; sourceTree = "<group>"; };
+		A5E266ED1CDFE1550053E0CD /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exit.png; path = Assets/exit.png; sourceTree = "<group>"; };
+		A5E266EF1CDFE15C0053E0CD /* flipCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flipCamera.png; path = Assets/flipCamera.png; sourceTree = "<group>"; };
+		A5E266F11CDFE1660053E0CD /* shoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shoot.png; path = Assets/shoot.png; sourceTree = "<group>"; };
+		A5F15D831CDA37C400C38345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Weekender/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5F15D8F1CDA425900C38345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Weekender/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5C72A5B1CCFEDD100DABD75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C77361CDC17D500FD455B /* SystemConfiguration.framework in Frameworks */,
+				A51C77341CDC17C400FD455B /* AVFoundation.framework in Frameworks */,
+				A51C77321CDC16BE00FD455B /* Spotify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72A711CCFEDD100DABD75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72A7C1CCFEDD100DABD75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A51C77301CDC169C00FD455B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A51C77351CDC17D500FD455B /* SystemConfiguration.framework */,
+				A51C77331CDC17C400FD455B /* AVFoundation.framework */,
+				A51C77311CDC16BE00FD455B /* Spotify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A51C77371CDC1B4C00FD455B /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				A51C77381CDC1B7700FD455B /* Weekender-Bridging-Header.h */,
+				A51C773C1CDC1E8100FD455B /* MusicViewController.swift */,
+			);
+			name = Music;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A57A3D3A1CD7AB6B00F82427 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				A5F15D911CDA455A00C38345 /* Overlays */,
+				A57A3D3B1CD92FC300F82427 /* CameraAssets */,
+				A5C72A651CCFEDD100DABD75 /* CameraViewController.swift */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		A57A3D3B1CD92FC300F82427 /* CameraAssets */ = {
+			isa = PBXGroup;
+			children = (
+				A5E266ED1CDFE1550053E0CD /* exit.png */,
+				A5E266EF1CDFE15C0053E0CD /* flipCamera.png */,
+				A5E266F11CDFE1660053E0CD /* shoot.png */,
+			);
+			name = CameraAssets;
+			sourceTree = "<group>";
+		};
+		A5C72A551CCFEDD100DABD75 = {
+			isa = PBXGroup;
+			children = (
+				A51C77301CDC169C00FD455B /* Frameworks */,
+				A5C72A601CCFEDD100DABD75 /* Weekender */,
+				A5C72A771CCFEDD100DABD75 /* WeekenderTests */,
+				A5C72A821CCFEDD100DABD75 /* WeekenderUITests */,
+				A5C72A5F1CCFEDD100DABD75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5C72A5F1CCFEDD100DABD75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72A5E1CCFEDD100DABD75 /* Weekender.app */,
+				A5C72A741CCFEDD100DABD75 /* WeekenderTests.xctest */,
+				A5C72A7F1CCFEDD100DABD75 /* WeekenderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5C72A601CCFEDD100DABD75 /* Weekender */ = {
+			isa = PBXGroup;
+			children = (
+				A5E266E51CDFC00E0053E0CD /* Constants.swift */,
+				A5C72A921CCFF2A300DABD75 /* DrinkCounterAssets */,
+				A57A3D3A1CD7AB6B00F82427 /* Camera */,
+				A5C72A911CCFEF0900DABD75 /* DrinkCounter */,
+				A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */,
+				A51C77371CDC1B4C00FD455B /* Music */,
+				A5E266E21CDFBE990053E0CD /* Contacts */,
+				A5C72A9B1CCFFFC600DABD75 /* Settings */,
+				A5F15D851CDA382D00C38345 /* LaunchImage */,
+				A5C72A6A1CCFEDD100DABD75 /* Assets.xcassets */,
+				A5F15D8E1CDA425900C38345 /* Main.storyboard */,
+				A5C72A6F1CCFEDD100DABD75 /* Info.plist */,
+			);
+			path = Weekender;
+			sourceTree = "<group>";
+		};
+		A5C72A771CCFEDD100DABD75 /* WeekenderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72A781CCFEDD100DABD75 /* WeekenderTests.swift */,
+				A5C72A7A1CCFEDD100DABD75 /* Info.plist */,
+			);
+			path = WeekenderTests;
+			sourceTree = "<group>";
+		};
+		A5C72A821CCFEDD100DABD75 /* WeekenderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72A831CCFEDD100DABD75 /* WeekenderUITests.swift */,
+				A5C72A851CCFEDD100DABD75 /* Info.plist */,
+			);
+			path = WeekenderUITests;
+			sourceTree = "<group>";
+		};
+		A5C72A911CCFEF0900DABD75 /* DrinkCounter */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */,
+				A5C72A991CCFFF0300DABD75 /* BACalculator.swift */,
+			);
+			name = DrinkCounter;
+			sourceTree = "<group>";
+		};
+		A5C72A921CCFF2A300DABD75 /* DrinkCounterAssets */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72A931CCFF2BA00DABD75 /* bkgd-blue-long.png */,
+				A5C72A941CCFF2BA00DABD75 /* bkgd-blue-short.png */,
+				A5C72A951CCFF2BA00DABD75 /* bkgd-blue-short@2x.png */,
+			);
+			name = DrinkCounterAssets;
+			sourceTree = "<group>";
+		};
+		A5C72A9B1CCFFFC600DABD75 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72A9C1CCFFFE500DABD75 /* SettingsViewController.swift */,
+				A57A3D381CD2915A00F82427 /* UserDefaults.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		A5E266E21CDFBE990053E0CD /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				A5E266E31CDFBEB80053E0CD /* ContactsViewController.swift */,
+			);
+			name = Contacts;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A5F15D851CDA382D00C38345 /* LaunchImage */ = {
+			isa = PBXGroup;
+			children = (
+				A5F15D821CDA37C400C38345 /* LaunchScreen.storyboard */,
+			);
+			name = LaunchImage;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A5F15D911CDA455A00C38345 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				A5E266E71CDFE1400053E0CD /* mobile2016.png */,
+				A5E266EB1CDFE14B0053E0CD /* empty.png */,
+				A5E266E91CDFE1460053E0CD /* searlesOverlay.png */,
+			);
+			name = Overlays;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5C72A5D1CCFEDD100DABD75 /* Weekender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C72A881CCFEDD100DABD75 /* Build configuration list for PBXNativeTarget "Weekender" */;
+			buildPhases = (
+				A5C72A5A1CCFEDD100DABD75 /* Sources */,
+				A5C72A5B1CCFEDD100DABD75 /* Frameworks */,
+				A5C72A5C1CCFEDD100DABD75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weekender;
+			productName = Weekender;
+			productReference = A5C72A5E1CCFEDD100DABD75 /* Weekender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5C72A731CCFEDD100DABD75 /* WeekenderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C72A8B1CCFEDD100DABD75 /* Build configuration list for PBXNativeTarget "WeekenderTests" */;
+			buildPhases = (
+				A5C72A701CCFEDD100DABD75 /* Sources */,
+				A5C72A711CCFEDD100DABD75 /* Frameworks */,
+				A5C72A721CCFEDD100DABD75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C72A761CCFEDD100DABD75 /* PBXTargetDependency */,
+			);
+			name = WeekenderTests;
+			productName = WeekenderTests;
+			productReference = A5C72A741CCFEDD100DABD75 /* WeekenderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5C72A7E1CCFEDD100DABD75 /* WeekenderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C72A8E1CCFEDD100DABD75 /* Build configuration list for PBXNativeTarget "WeekenderUITests" */;
+			buildPhases = (
+				A5C72A7B1CCFEDD100DABD75 /* Sources */,
+				A5C72A7C1CCFEDD100DABD75 /* Frameworks */,
+				A5C72A7D1CCFEDD100DABD75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C72A811CCFEDD100DABD75 /* PBXTargetDependency */,
+			);
+			name = WeekenderUITests;
+			productName = WeekenderUITests;
+			productReference = A5C72A7F1CCFEDD100DABD75 /* WeekenderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5C72A561CCFEDD100DABD75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Konstantine Mushegian";
+				TargetAttributes = {
+					A5C72A5D1CCFEDD100DABD75 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Y9EW699WH3;
+					};
+					A5C72A731CCFEDD100DABD75 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Y9EW699WH3;
+						TestTargetID = A5C72A5D1CCFEDD100DABD75;
+					};
+					A5C72A7E1CCFEDD100DABD75 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Y9EW699WH3;
+						TestTargetID = A5C72A5D1CCFEDD100DABD75;
+					};
+				};
+			};
+			buildConfigurationList = A5C72A591CCFEDD100DABD75 /* Build configuration list for PBXProject "Weekender" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5C72A551CCFEDD100DABD75;
+			productRefGroup = A5C72A5F1CCFEDD100DABD75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5C72A5D1CCFEDD100DABD75 /* Weekender */,
+				A5C72A731CCFEDD100DABD75 /* WeekenderTests */,
+				A5C72A7E1CCFEDD100DABD75 /* WeekenderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5C72A5C1CCFEDD100DABD75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F15D841CDA37C400C38345 /* LaunchScreen.storyboard in Resources */,
+				A5E266F21CDFE1660053E0CD /* shoot.png in Resources */,
+				A5E266EE1CDFE1550053E0CD /* exit.png in Resources */,
+				A5C72A981CCFF2BA00DABD75 /* bkgd-blue-short@2x.png in Resources */,
+				A5C72A971CCFF2BA00DABD75 /* bkgd-blue-short.png in Resources */,
+				A5E266E81CDFE1400053E0CD /* mobile2016.png in Resources */,
+				A5C72A6B1CCFEDD100DABD75 /* Assets.xcassets in Resources */,
+				A5E266F01CDFE15C0053E0CD /* flipCamera.png in Resources */,
+				A5E266EA1CDFE1460053E0CD /* searlesOverlay.png in Resources */,
+				A5F15D901CDA425900C38345 /* Main.storyboard in Resources */,
+				A5C72A961CCFF2BA00DABD75 /* bkgd-blue-long.png in Resources */,
+				A5E266EC1CDFE14B0053E0CD /* empty.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72A721CCFEDD100DABD75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72A7D1CCFEDD100DABD75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5C72A5A1CCFEDD100DABD75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C72A661CCFEDD100DABD75 /* CameraViewController.swift in Sources */,
+				A5C72A621CCFEDD100DABD75 /* AppDelegate.swift in Sources */,
+				A57A3D391CD2915A00F82427 /* UserDefaults.swift in Sources */,
+				A51C773D1CDC1E8100FD455B /* MusicViewController.swift in Sources */,
+				A5E266E61CDFC00E0053E0CD /* Constants.swift in Sources */,
+				A5E266E41CDFBEB80053E0CD /* ContactsViewController.swift in Sources */,
+				A5C72A9A1CCFFF0300DABD75 /* BACalculator.swift in Sources */,
+				A5C72A9D1CCFFFE500DABD75 /* SettingsViewController.swift in Sources */,
+				A5C72A641CCFEDD100DABD75 /* DrinkCounterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72A701CCFEDD100DABD75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C72A791CCFEDD100DABD75 /* WeekenderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72A7B1CCFEDD100DABD75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C72A841CCFEDD100DABD75 /* WeekenderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5C72A761CCFEDD100DABD75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C72A5D1CCFEDD100DABD75 /* Weekender */;
+			targetProxy = A5C72A751CCFEDD100DABD75 /* PBXContainerItemProxy */;
+		};
+		A5C72A811CCFEDD100DABD75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C72A5D1CCFEDD100DABD75 /* Weekender */;
+			targetProxy = A5C72A801CCFEDD100DABD75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5F15D821CDA37C400C38345 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5F15D831CDA37C400C38345 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A5F15D8E1CDA425900C38345 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5F15D8F1CDA425900C38345 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5C72A861CCFEDD100DABD75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5C72A871CCFEDD100DABD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5C72A891CCFEDD100DABD75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Weekender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = bowdoin.edu.2505.mushegian.Weekender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weekender-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A5C72A8A1CCFEDD100DABD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Weekender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = bowdoin.edu.2505.mushegian.Weekender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weekender-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A5C72A8C1CCFEDD100DABD75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeekenderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bowdoin.edu.2505.mushegian.WeekenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weekender.app/Weekender";
+			};
+			name = Debug;
+		};
+		A5C72A8D1CCFEDD100DABD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeekenderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bowdoin.edu.2505.mushegian.WeekenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weekender.app/Weekender";
+			};
+			name = Release;
+		};
+		A5C72A8F1CCFEDD100DABD75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeekenderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bowdoin.edu.2505.mushegian.WeekenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Weekender;
+			};
+			name = Debug;
+		};
+		A5C72A901CCFEDD100DABD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WeekenderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bowdoin.edu.2505.mushegian.WeekenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Weekender;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5C72A591CCFEDD100DABD75 /* Build configuration list for PBXProject "Weekender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C72A861CCFEDD100DABD75 /* Debug */,
+				A5C72A871CCFEDD100DABD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C72A881CCFEDD100DABD75 /* Build configuration list for PBXNativeTarget "Weekender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C72A891CCFEDD100DABD75 /* Debug */,
+				A5C72A8A1CCFEDD100DABD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C72A8B1CCFEDD100DABD75 /* Build configuration list for PBXNativeTarget "WeekenderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C72A8C1CCFEDD100DABD75 /* Debug */,
+				A5C72A8D1CCFEDD100DABD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C72A8E1CCFEDD100DABD75 /* Build configuration list for PBXNativeTarget "WeekenderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C72A8F1CCFEDD100DABD75 /* Debug */,
+				A5C72A901CCFEDD100DABD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5C72A561CCFEDD100DABD75 /* Project object */;
+}
