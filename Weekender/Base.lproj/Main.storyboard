@@ -185,7 +185,7 @@
         <!--Contacts-->
         <scene sceneID="P5T-mf-eBw">
             <objects>
-                <viewController id="3cb-Ao-rJN" customClass="ContactsViewController" customModule="Weekender" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3cb-Ao-rJN" customClass="ContactsWellnessViewController" customModule="Weekender" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a2e-q2-psn"/>
                         <viewControllerLayoutGuide type="bottom" id="wbU-FS-hM8"/>

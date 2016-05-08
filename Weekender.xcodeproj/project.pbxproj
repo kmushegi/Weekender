@@ -23,7 +23,7 @@
 		A5C72A981CCFF2BA00DABD75 /* bkgd-blue-short@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A951CCFF2BA00DABD75 /* bkgd-blue-short@2x.png */; };
 		A5C72A9A1CCFFF0300DABD75 /* BACalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A991CCFFF0300DABD75 /* BACalculator.swift */; };
 		A5C72A9D1CCFFFE500DABD75 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A9C1CCFFFE500DABD75 /* SettingsViewController.swift */; };
-		A5E266E41CDFBEB80053E0CD /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266E31CDFBEB80053E0CD /* ContactsViewController.swift */; };
+		A5E266E41CDFBEB80053E0CD /* ContactsWelnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266E31CDFBEB80053E0CD /* ContactsWelnessViewController.swift */; };
 		A5E266E61CDFC00E0053E0CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266E51CDFC00E0053E0CD /* Constants.swift */; };
 		A5E266E81CDFE1400053E0CD /* mobile2016.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266E71CDFE1400053E0CD /* mobile2016.png */; };
 		A5E266EA1CDFE1460053E0CD /* searlesOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266E91CDFE1460053E0CD /* searlesOverlay.png */; };
@@ -31,6 +31,8 @@
 		A5E266EE1CDFE1550053E0CD /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266ED1CDFE1550053E0CD /* exit.png */; };
 		A5E266F01CDFE15C0053E0CD /* flipCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266EF1CDFE15C0053E0CD /* flipCamera.png */; };
 		A5E266F21CDFE1660053E0CD /* shoot.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E266F11CDFE1660053E0CD /* shoot.png */; };
+		A5E266F41CDFEAC90053E0CD /* WellnessTipsModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266F31CDFEAC90053E0CD /* WellnessTipsModalViewController.swift */; };
+		A5E266F61CDFEB470053E0CD /* AssistanceModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266F51CDFEB470053E0CD /* AssistanceModalViewController.swift */; };
 		A5F15D841CDA37C400C38345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F15D821CDA37C400C38345 /* LaunchScreen.storyboard */; };
 		A5F15D901CDA425900C38345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F15D8E1CDA425900C38345 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -76,7 +78,7 @@
 		A5C72A951CCFF2BA00DABD75 /* bkgd-blue-short@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-short@2x.png"; path = "../../../bkgd-blue-short@2x.png"; sourceTree = "<group>"; };
 		A5C72A991CCFFF0300DABD75 /* BACalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACalculator.swift; sourceTree = "<group>"; };
 		A5C72A9C1CCFFFE500DABD75 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		A5E266E31CDFBEB80053E0CD /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsViewController.swift; path = Weekender/ContactsViewController.swift; sourceTree = "<group>"; };
+		A5E266E31CDFBEB80053E0CD /* ContactsWelnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsWelnessViewController.swift; path = Weekender/ContactsWelnessViewController.swift; sourceTree = "<group>"; };
 		A5E266E51CDFC00E0053E0CD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5E266E71CDFE1400053E0CD /* mobile2016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mobile2016.png; path = Assets/mobile2016.png; sourceTree = "<group>"; };
 		A5E266E91CDFE1460053E0CD /* searlesOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searlesOverlay.png; path = Assets/searlesOverlay.png; sourceTree = "<group>"; };
@@ -84,6 +86,8 @@
 		A5E266ED1CDFE1550053E0CD /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exit.png; path = Assets/exit.png; sourceTree = "<group>"; };
 		A5E266EF1CDFE15C0053E0CD /* flipCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flipCamera.png; path = Assets/flipCamera.png; sourceTree = "<group>"; };
 		A5E266F11CDFE1660053E0CD /* shoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shoot.png; path = Assets/shoot.png; sourceTree = "<group>"; };
+		A5E266F31CDFEAC90053E0CD /* WellnessTipsModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WellnessTipsModalViewController.swift; path = Weekender/WellnessTipsModalViewController.swift; sourceTree = "<group>"; };
+		A5E266F51CDFEB470053E0CD /* AssistanceModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssistanceModalViewController.swift; path = Weekender/AssistanceModalViewController.swift; sourceTree = "<group>"; };
 		A5F15D831CDA37C400C38345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Weekender/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5F15D8F1CDA425900C38345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Weekender/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,7 +190,7 @@
 				A5C72A911CCFEF0900DABD75 /* DrinkCounter */,
 				A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */,
 				A51C77371CDC1B4C00FD455B /* Music */,
-				A5E266E21CDFBE990053E0CD /* Contacts */,
+				A5E266E21CDFBE990053E0CD /* ContactsWellness */,
 				A5C72A9B1CCFFFC600DABD75 /* Settings */,
 				A5F15D851CDA382D00C38345 /* LaunchImage */,
 				A5C72A6A1CCFEDD100DABD75 /* Assets.xcassets */,
@@ -242,12 +246,14 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
-		A5E266E21CDFBE990053E0CD /* Contacts */ = {
+		A5E266E21CDFBE990053E0CD /* ContactsWellness */ = {
 			isa = PBXGroup;
 			children = (
-				A5E266E31CDFBEB80053E0CD /* ContactsViewController.swift */,
+				A5E266E31CDFBEB80053E0CD /* ContactsWelnessViewController.swift */,
+				A5E266F31CDFEAC90053E0CD /* WellnessTipsModalViewController.swift */,
+				A5E266F51CDFEB470053E0CD /* AssistanceModalViewController.swift */,
 			);
-			name = Contacts;
+			name = ContactsWellness;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -418,8 +424,10 @@
 				A57A3D391CD2915A00F82427 /* UserDefaults.swift in Sources */,
 				A51C773D1CDC1E8100FD455B /* MusicViewController.swift in Sources */,
 				A5E266E61CDFC00E0053E0CD /* Constants.swift in Sources */,
-				A5E266E41CDFBEB80053E0CD /* ContactsViewController.swift in Sources */,
+				A5E266E41CDFBEB80053E0CD /* ContactsWelnessViewController.swift in Sources */,
 				A5C72A9A1CCFFF0300DABD75 /* BACalculator.swift in Sources */,
+				A5E266F61CDFEB470053E0CD /* AssistanceModalViewController.swift in Sources */,
+				A5E266F41CDFEAC90053E0CD /* WellnessTipsModalViewController.swift in Sources */,
 				A5C72A9D1CCFFFE500DABD75 /* SettingsViewController.swift in Sources */,
 				A5C72A641CCFEDD100DABD75 /* DrinkCounterViewController.swift in Sources */,
 			);

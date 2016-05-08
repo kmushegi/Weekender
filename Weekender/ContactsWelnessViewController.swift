@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactsViewController: UIViewController {
+class ContactsWellnessViewController: UIViewController {
 
     @IBOutlet weak var contactsView: UIScrollView!
     
@@ -45,7 +45,7 @@ class ContactsViewController: UIViewController {
         setUpButton(securityEmergencyButton!)
         securityEmergencyButton!.backgroundColor = UIColor.redColor()
         securityEmergencyButton?.setTitle(c.securityEmergencyTitle, forState: .Normal)
-        securityEmergencyButton?.addTarget(self, action: #selector(ContactsViewController.callSecurityEmergency), forControlEvents: .TouchUpInside)
+        securityEmergencyButton?.addTarget(self, action: #selector(ContactsWellnessViewController.callSecurityEmergency), forControlEvents: .TouchUpInside)
         contactsView.addSubview(securityEmergencyButton!)
     }
     
@@ -54,7 +54,7 @@ class ContactsViewController: UIViewController {
         setUpButton(securityNonEmergencyButton!)
         securityNonEmergencyButton!.backgroundColor = UIColor.orangeColor()
         securityNonEmergencyButton?.setTitle(c.securityNonEmergencyTitle, forState: .Normal)
-        securityNonEmergencyButton?.addTarget(self, action: #selector(ContactsViewController.callSecurityNonEmergency), forControlEvents: .TouchUpInside)
+        securityNonEmergencyButton?.addTarget(self, action: #selector(ContactsWellnessViewController.callSecurityNonEmergency), forControlEvents: .TouchUpInside)
         contactsView.addSubview(securityNonEmergencyButton!)
     }
     
@@ -63,7 +63,7 @@ class ContactsViewController: UIViewController {
         setUpButton(pubButton!)
         pubButton!.backgroundColor = UIColor.blueColor()
         pubButton?.setTitle(c.pubTitle, forState: .Normal)
-        pubButton?.addTarget(self, action: #selector(ContactsViewController.callPub), forControlEvents: .TouchUpInside)
+        pubButton?.addTarget(self, action: #selector(ContactsWellnessViewController.callPub), forControlEvents: .TouchUpInside)
         pubButton?.layer.cornerRadius = c.buttonCornerRadius
         contactsView.addSubview(pubButton!)
     }
@@ -73,7 +73,7 @@ class ContactsViewController: UIViewController {
         setUpButton(wellnessTipsButton!)
         wellnessTipsButton!.backgroundColor = UIColor.greenColor()
         wellnessTipsButton?.setTitle(c.wellnessTitle, forState: .Normal)
-        wellnessTipsButton?.addTarget(self, action: #selector(ContactsViewController.wellnessSegue), forControlEvents: .TouchUpInside)
+        wellnessTipsButton?.addTarget(self, action: #selector(ContactsWellnessViewController.wellnessSegue), forControlEvents: .TouchUpInside)
         contactsView.addSubview(wellnessTipsButton!)
     }
     
@@ -82,7 +82,7 @@ class ContactsViewController: UIViewController {
         setUpButton(assistingOthersButton!)
         assistingOthersButton!.backgroundColor = UIColor.purpleColor()
         assistingOthersButton?.setTitle(c.assistanceTitle, forState: .Normal)
-        assistingOthersButton?.addTarget(self, action: #selector(ContactsViewController.assistanceSegue), forControlEvents: .TouchUpInside)
+        assistingOthersButton?.addTarget(self, action: #selector(ContactsWellnessViewController.assistanceSegue), forControlEvents: .TouchUpInside)
         
     }
     
