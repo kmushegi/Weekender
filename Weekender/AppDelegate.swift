@@ -11,10 +11,12 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let ClientID = "4f47cb86c66d4d7592bb2c48f875ba68"
-    let CallbackURL = "weekender://returnafterlogin"
-    let TokenSwapURL = "http://localhost:1234/swap"
-    let TokenRefreshServiceURL = "http://localhost:1234/refresh"
+    let kClientID = "4f47cb86c66d4d7592bb2c48f875ba68"
+    let kCallbackURL = "weekender://returnafterlogin"
+    //let kTokenSwapURL = "https://thawing-tundra-45046.herokuapp.com/swap"
+    //let kTokenRefreshServiceURL = "https://thawing-tundra-45046.herokuapp.com/refresh"
+    let kTokenSwapURL = "http://localhost:1234/swap"
+    let kTokenRefreshServiceURL = "http://localhost:1234/refresh"
 
     var window: UIWindow?
 
@@ -34,12 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if SPTAuth.defaultInstance().canHandleURL(url) {
             SPTAuth.defaultInstance().handleAuthCallbackWithTriggeredAuthURL(url, callback: {(error: NSError!, session: SPTSession!) -> Void in
                 if error != nil {
-                    print("*** Auth error ***")
+                    print("*** Auth error *** \n \(error)")
                     return
                 }
                 
                 let userDefaults = NSUserDefaults.standardUserDefaults()
-                let sessionData = NSKeyedArchiver.archiveRootObject(session, toFile: "sessionData")
+                let sessionData = NSKeyedArchiver.archivedDataWithRootObject(session)
+                
                 userDefaults.setObject(sessionData, forKey: "SpotifySession")
                 userDefaults.synchronize()
                 
@@ -47,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 NSNotificationCenter.defaultCenter().postNotificationName("loginSuccessful", object: nil)
             })
         }
-        return true
+        return false
     }
     
 

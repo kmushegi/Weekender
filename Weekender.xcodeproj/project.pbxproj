@@ -10,7 +10,7 @@
 		A51C77321CDC16BE00FD455B /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C77311CDC16BE00FD455B /* Spotify.framework */; };
 		A51C77341CDC17C400FD455B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C77331CDC17C400FD455B /* AVFoundation.framework */; };
 		A51C77361CDC17D500FD455B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C77351CDC17D500FD455B /* SystemConfiguration.framework */; };
-		A51C773D1CDC1E8100FD455B /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C773C1CDC1E8100FD455B /* MusicViewController.swift */; };
+		A51C773D1CDC1E8100FD455B /* SPTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */; };
 		A57A3D391CD2915A00F82427 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A3D381CD2915A00F82427 /* UserDefaults.swift */; };
 		A5C72A621CCFEDD100DABD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */; };
 		A5C72A641CCFEDD100DABD75 /* DrinkCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */; };
@@ -35,6 +35,7 @@
 		A5E266F61CDFEB470053E0CD /* AssistanceModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266F51CDFEB470053E0CD /* AssistanceModalViewController.swift */; };
 		A5F15D841CDA37C400C38345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F15D821CDA37C400C38345 /* LaunchScreen.storyboard */; };
 		A5F15D901CDA425900C38345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F15D8E1CDA425900C38345 /* Main.storyboard */; };
+		A5FB86881CE026BB0043AC31 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB86871CE026BB0043AC31 /* MusicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +60,7 @@
 		A51C77331CDC17C400FD455B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A51C77351CDC17D500FD455B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A51C77381CDC1B7700FD455B /* Weekender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weekender-Bridging-Header.h"; sourceTree = "<group>"; };
-		A51C773C1CDC1E8100FD455B /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicViewController.swift; path = Weekender/MusicViewController.swift; sourceTree = "<group>"; };
+		A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPTLoginViewController.swift; path = Weekender/SPTLoginViewController.swift; sourceTree = "<group>"; };
 		A57A3D381CD2915A00F82427 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		A5C72A5E1CCFEDD100DABD75 /* Weekender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weekender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		A5E266F51CDFEB470053E0CD /* AssistanceModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssistanceModalViewController.swift; path = Weekender/AssistanceModalViewController.swift; sourceTree = "<group>"; };
 		A5F15D831CDA37C400C38345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Weekender/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5F15D8F1CDA425900C38345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Weekender/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5FB86871CE026BB0043AC31 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicViewController.swift; path = Weekender/MusicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				A51C77381CDC1B7700FD455B /* Weekender-Bridging-Header.h */,
-				A51C773C1CDC1E8100FD455B /* MusicViewController.swift */,
+				A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */,
+				A5FB86871CE026BB0043AC31 /* MusicViewController.swift */,
 			);
 			name = Music;
 			path = ..;
@@ -419,10 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FB86881CE026BB0043AC31 /* MusicViewController.swift in Sources */,
 				A5C72A661CCFEDD100DABD75 /* CameraViewController.swift in Sources */,
 				A5C72A621CCFEDD100DABD75 /* AppDelegate.swift in Sources */,
 				A57A3D391CD2915A00F82427 /* UserDefaults.swift in Sources */,
-				A51C773D1CDC1E8100FD455B /* MusicViewController.swift in Sources */,
+				A51C773D1CDC1E8100FD455B /* SPTLoginViewController.swift in Sources */,
 				A5E266E61CDFC00E0053E0CD /* Constants.swift in Sources */,
 				A5E266E41CDFBEB80053E0CD /* ContactsWelnessViewController.swift in Sources */,
 				A5C72A9A1CCFFF0300DABD75 /* BACalculator.swift in Sources */,

@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="1132" y="-1752"/>
         </scene>
-        <!--Music-->
+        <!--Login View Controller-->
         <scene sceneID="RvM-90-Lhu">
             <objects>
-                <viewController id="GUq-MJ-Zr1" customClass="MusicViewController" customModule="Weekender" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GUq-MJ-Zr1" customClass="SPTLoginViewController" customModule="Weekender" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gea-Ad-LgV"/>
                         <viewControllerLayoutGuide type="bottom" id="T4Z-Wa-oYw"/>
@@ -139,14 +139,47 @@
                             <constraint firstItem="zi0-GH-vJQ" firstAttribute="centerX" secondItem="5lZ-Bx-iwl" secondAttribute="centerX" id="Zto-ms-Crb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Music" id="fRL-x9-CTj"/>
+                    <navigationItem key="navigationItem" id="EPC-1w-vMz"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="loginButton" destination="zi0-GH-vJQ" id="fT4-O5-7kX"/>
+                        <segue destination="8kY-43-7lj" kind="show" identifier="loginsuccess" id="zjk-Gy-LCo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ngg-tu-Qfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="-1055"/>
+            <point key="canvasLocation" x="1944" y="-1055"/>
+        </scene>
+        <!--Music View Controller-->
+        <scene sceneID="uC7-OE-juB">
+            <objects>
+                <viewController storyboardIdentifier="MusicViewController" id="8kY-43-7lj" customClass="MusicViewController" customModule="Weekender" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Jc-dW-8MC"/>
+                        <viewControllerLayoutGuide type="bottom" id="LCN-CB-Wnt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ark-SF-jdH" customClass="MusicView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95M-Ll-wnO">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="95M-Ll-wnO" firstAttribute="centerX" secondItem="Ark-SF-jdH" secondAttribute="centerX" id="TMF-O0-I4H"/>
+                            <constraint firstItem="95M-Ll-wnO" firstAttribute="centerY" secondItem="Ark-SF-jdH" secondAttribute="centerY" id="lV2-pv-qwv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mi3-UI-PnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2740" y="-1055"/>
         </scene>
         <!--Camera-->
         <scene sceneID="wg7-f3-ORb">
@@ -378,7 +411,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="GUq-MJ-Zr1" kind="relationship" relationship="viewControllers" id="4UR-CN-9kW"/>
+                        <segue destination="pvR-qS-oZg" kind="relationship" relationship="viewControllers" id="4UR-CN-9kW"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="3cb-Ao-rJN" kind="relationship" relationship="viewControllers" id="kac-gK-Wej"/>
                         <segue destination="X7C-hm-bf8" kind="relationship" relationship="viewControllers" id="Edd-oc-NdK"/>
@@ -407,9 +440,29 @@
             </objects>
             <point key="canvasLocation" x="1132" y="1618"/>
         </scene>
+        <!--Music-->
+        <scene sceneID="2k7-kC-EmR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pvR-qS-oZg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Music" image="music" id="fRL-x9-CTj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="utx-Oj-JPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GUq-MJ-Zr1" kind="relationship" relationship="rootViewController" id="T6z-Za-por"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y07-Iv-AdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="-1055"/>
+        </scene>
     </scenes>
     <resources>
         <image name="camera" width="30" height="30"/>
+        <image name="music" width="38" height="38"/>
         <image name="phone" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
         <image name="solocup" width="30" height="30"/>
