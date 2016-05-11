@@ -10,6 +10,8 @@ import UIKit
 
 class AssistanceModalViewController: UIViewController {
 
+    let C = Constants()
+    
     var doneButton: UIButton?
     
     override func viewDidLoad() {
@@ -29,12 +31,12 @@ class AssistanceModalViewController: UIViewController {
     
     func addDoneButton() {
         doneButton = UIButton()
-        doneButton?.frame = CGRectMake(0, 5, 60, 20)
-        doneButton?.setTitle("Done", forState: .Normal)
-        doneButton?.setTitleColor(UIColor.cyanColor(), forState: .Normal)
-        doneButton?.setTitleColor(UIColor.whiteColor(), forState: .Selected)
+        doneButton?.frame = CGRectMake(C.doneButtonX, C.doneButtonY, C.doneButtonWidth, C.doneButtonHeight)
+        doneButton?.setTitle(C.backButtonTitle, forState: .Normal)
+        doneButton?.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        doneButton?.setTitleColor(UIColor.grayColor(), forState: .Selected)
         doneButton?.backgroundColor = UIColor.purpleColor()
-        doneButton?.layer.cornerRadius = 5
+        doneButton?.layer.cornerRadius = C.doneButtonCornerRadius
         doneButton?.addTarget(self, action: #selector(WellnessTipsModalViewController.dismiss), forControlEvents: .TouchUpInside)
         self.view.addSubview(doneButton!)
     }

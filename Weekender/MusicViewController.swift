@@ -11,14 +11,14 @@ import MediaPlayer
 
 class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     
-    var player = SPTAudioStreamingController?()
-    let auth = SPTAuth.defaultInstance()
+    var player  = SPTAudioStreamingController?()
+    let auth    = SPTAuth.defaultInstance()
     var session = SPTSession()
     
     var needsSessionRefresh = false
     var sessionIsRefreshing = false
-    var newUser = false
-    var refreshingTokens = false
+    var newUser             = false
+    var refreshingTokens    = false
     
     let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
     

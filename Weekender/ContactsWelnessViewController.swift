@@ -18,13 +18,17 @@ class ContactsWellnessViewController: UIViewController {
     var wellnessTipsButton          : UIButton?
     var assistingOthersButton       : UIButton?
     
-    let c = Constants()
+    let C = Constants()
     
-    var buttonPosition: CGFloat = 50
-    let buttonBuffer: CGFloat = 40
+    let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
+    
+    var buttonPositionX  : CGFloat = 50
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundImage.image = UIImage(named: "bkgd-blue-long")
+        self.view.insertSubview(backgroundImage, atIndex: 0)
         
         contactsView.contentSize = self.view.frame.size
         self.view.addSubview(contactsView)
@@ -45,7 +49,7 @@ class ContactsWellnessViewController: UIViewController {
         securityEmergencyButton = UIButton()
         setUpButton(securityEmergencyButton!)
         securityEmergencyButton!.backgroundColor = UIColor.redColor()
-        securityEmergencyButton?.setTitle(c.securityEmergencyTitle, forState: .Normal)
+        securityEmergencyButton?.setTitle(C.securityEmergencyTitle, forState: .Normal)
         securityEmergencyButton?.addTarget(self, action: #selector(ContactsWellnessViewController.callSecurityEmergency), forControlEvents: .TouchUpInside)
         contactsView.addSubview(securityEmergencyButton!)
     }
@@ -54,7 +58,7 @@ class ContactsWellnessViewController: UIViewController {
         securityNonEmergencyButton = UIButton()
         setUpButton(securityNonEmergencyButton!)
         securityNonEmergencyButton!.backgroundColor = UIColor.orangeColor()
-        securityNonEmergencyButton?.setTitle(c.securityNonEmergencyTitle, forState: .Normal)
+        securityNonEmergencyButton?.setTitle(C.securityNonEmergencyTitle, forState: .Normal)
         securityNonEmergencyButton?.addTarget(self, action: #selector(ContactsWellnessViewController.callSecurityNonEmergency), forControlEvents: .TouchUpInside)
         contactsView.addSubview(securityNonEmergencyButton!)
     }
@@ -62,18 +66,18 @@ class ContactsWellnessViewController: UIViewController {
     func addPub() {
         pubButton = UIButton()
         setUpButton(pubButton!)
-        pubButton!.backgroundColor = UIColor.blueColor()
-        pubButton?.setTitle(c.pubTitle, forState: .Normal)
+        pubButton!.backgroundColor = UIColor.brownColor()
+        pubButton?.setTitle(C.pubTitle, forState: .Normal)
         pubButton?.addTarget(self, action: #selector(ContactsWellnessViewController.callPub), forControlEvents: .TouchUpInside)
-        pubButton?.layer.cornerRadius = c.buttonCornerRadius
+        pubButton?.layer.cornerRadius = C.buttonCornerRadius
         contactsView.addSubview(pubButton!)
     }
     
     func addWellness() {
         wellnessTipsButton = UIButton()
         setUpButton(wellnessTipsButton!)
-        wellnessTipsButton!.backgroundColor = UIColor.greenColor()
-        wellnessTipsButton?.setTitle(c.wellnessTitle, forState: .Normal)
+        wellnessTipsButton!.backgroundColor = UIColor.blueColor()
+        wellnessTipsButton?.setTitle(C.wellnessTitle, forState: .Normal)
         wellnessTipsButton?.addTarget(self, action: #selector(ContactsWellnessViewController.wellnessSegue), forControlEvents: .TouchUpInside)
         contactsView.addSubview(wellnessTipsButton!)
     }
@@ -82,22 +86,22 @@ class ContactsWellnessViewController: UIViewController {
         assistingOthersButton = UIButton()
         setUpButton(assistingOthersButton!)
         assistingOthersButton!.backgroundColor = UIColor.purpleColor()
-        assistingOthersButton?.setTitle(c.assistanceTitle, forState: .Normal)
+        assistingOthersButton?.setTitle(C.assistanceTitle, forState: .Normal)
         assistingOthersButton?.addTarget(self, action: #selector(ContactsWellnessViewController.assistanceSegue), forControlEvents: .TouchUpInside)
         contactsView.addSubview(assistingOthersButton!)
         
     }
     
     @objc private func callSecurityEmergency(sender: UIButton!) {
-        callNumber(c.securityEmergency)
+        callNumber(C.securityEmergency)
     }
     
     @objc private func callSecurityNonEmergency(sender: UIButton!) {
-        callNumber(c.securityNonEmergency)
+        callNumber(C.securityNonEmergency)
     }
     
     @objc private func callPub(sender: UIButton!) {
-        callNumber(c.pub)
+        callNumber(C.pub)
     }
     
     @objc private func wellnessSegue(sender: UIButton!) {
@@ -109,11 +113,11 @@ class ContactsWellnessViewController: UIViewController {
     }
     
     private func setUpButton(button: UIButton) {
-        button.frame = CGRectMake(self.view.bounds.midX-c.buttonWidth/2, buttonPosition, c.buttonWidth, c.buttonHeight)
-        buttonPosition += buttonBuffer + c.buttonHeight
+        button.frame = CGRectMake(self.view.bounds.midX-C.buttonWidth/2, buttonPositionX, C.buttonWidth, C.buttonHeight)
+        buttonPositionX += C.buttonBuffer + C.buttonHeight
         button.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
         button.titleLabel?.textAlignment = NSTextAlignment.Center
-        button.layer.cornerRadius = c.buttonCornerRadius
+        button.layer.cornerRadius = C.buttonCornerRadius
     }
     
     private func callNumber(number: String) {

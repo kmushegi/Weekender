@@ -139,7 +139,7 @@
 		A51C77371CDC1B4C00FD455B /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				A57CE3491CE183E90038EE38 /* CameraButtons */,
+				A57CE3491CE183E90038EE38 /* ControlButtons */,
 				A51C77381CDC1B7700FD455B /* Weekender-Bridging-Header.h */,
 				A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */,
 				A5FB86871CE026BB0043AC31 /* MusicViewController.swift */,
@@ -177,14 +177,14 @@
 			name = BackgroundAssets;
 			sourceTree = "<group>";
 		};
-		A57CE3491CE183E90038EE38 /* CameraButtons */ = {
+		A57CE3491CE183E90038EE38 /* ControlButtons */ = {
 			isa = PBXGroup;
 			children = (
 				A57CE34A1CE183FA0038EE38 /* next.png */,
 				A57CE34B1CE183FA0038EE38 /* pause.png */,
 				A57CE34C1CE183FA0038EE38 /* play.png */,
 			);
-			name = CameraButtons;
+			name = ControlButtons;
 			sourceTree = "<group>";
 		};
 		A5C72A551CCFEDD100DABD75 = {
