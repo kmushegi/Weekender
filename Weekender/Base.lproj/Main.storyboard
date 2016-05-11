@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="-1752"/>
+            <point key="canvasLocation" x="1132" y="-1896"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="RvM-90-Lhu">
@@ -143,12 +143,12 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="loginButton" destination="zi0-GH-vJQ" id="fT4-O5-7kX"/>
-                        <segue destination="8kY-43-7lj" kind="show" identifier="loginsuccess" id="zjk-Gy-LCo"/>
+                        <segue destination="8kY-43-7lj" kind="show" identifier="loginsuccess" id="R0o-M7-pf9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ngg-tu-Qfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1944" y="-1055"/>
+            <point key="canvasLocation" x="2763" y="-1830"/>
         </scene>
         <!--Music View Controller-->
         <scene sceneID="uC7-OE-juB">
@@ -166,7 +166,7 @@
                                 <rect key="frame" x="20" y="20" width="560" height="83"/>
                                 <color key="backgroundColor" red="0.0" green="0.8941090455976457" blue="0.97887325599999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="hhh-bo-bij"/>
+                                    <constraint firstAttribute="height" constant="83" id="Vo6-pO-TqG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -176,7 +176,7 @@
                                 <rect key="frame" x="20" y="111" width="560" height="70"/>
                                 <color key="backgroundColor" red="0.1482117033418752" green="0.97887325599999997" blue="0.64902164580455413" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Kif-XX-M2q"/>
+                                    <constraint firstAttribute="height" constant="70" id="v4s-i9-t7z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -186,7 +186,7 @@
                                 <rect key="frame" x="20" y="189" width="560" height="70"/>
                                 <color key="backgroundColor" red="0.1482117033418752" green="0.97887325599999997" blue="0.64902164580455413" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="KFK-YO-a8w"/>
+                                    <constraint firstAttribute="height" constant="70" id="yBf-M1-LFu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -196,7 +196,7 @@
                                 <rect key="frame" x="20" y="267" width="560" height="70"/>
                                 <color key="backgroundColor" red="0.1482117033418752" green="0.97887325599999997" blue="0.64902164580455413" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="kgU-FH-3Wm"/>
+                                    <constraint firstAttribute="height" constant="70" id="4wZ-lh-oSK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -205,30 +205,32 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="leading" secondItem="qbV-Wt-izx" secondAttribute="leading" id="AGE-Wm-eBj"/>
-                            <constraint firstItem="qbV-Wt-izx" firstAttribute="trailing" secondItem="F4U-bz-S84" secondAttribute="trailing" id="KjV-3t-ZD9"/>
-                            <constraint firstItem="PfQ-CT-auO" firstAttribute="leading" secondItem="Ark-SF-jdH" secondAttribute="leadingMargin" id="RJc-lU-do4"/>
-                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="top" secondItem="PfQ-CT-auO" secondAttribute="bottom" constant="8" symbolic="YES" id="SWH-yu-X3K"/>
-                            <constraint firstItem="qbV-Wt-izx" firstAttribute="top" secondItem="Ngc-4K-kKG" secondAttribute="bottom" constant="8" symbolic="YES" id="XJK-9C-qbb"/>
-                            <constraint firstItem="F4U-bz-S84" firstAttribute="top" secondItem="qbV-Wt-izx" secondAttribute="bottom" constant="8" symbolic="YES" id="dev-Nz-RlT"/>
-                            <constraint firstItem="PfQ-CT-auO" firstAttribute="trailing" secondItem="Ngc-4K-kKG" secondAttribute="trailing" id="dja-Df-9ll"/>
-                            <constraint firstItem="PfQ-CT-auO" firstAttribute="trailing" secondItem="Ark-SF-jdH" secondAttribute="trailingMargin" id="h3c-z5-KEV"/>
-                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="trailing" secondItem="qbV-Wt-izx" secondAttribute="trailing" id="jaD-KS-bdu"/>
-                            <constraint firstItem="PfQ-CT-auO" firstAttribute="top" secondItem="Ark-SF-jdH" secondAttribute="top" constant="20" symbolic="YES" id="lx4-3x-VnP"/>
-                            <constraint firstItem="PfQ-CT-auO" firstAttribute="leading" secondItem="Ngc-4K-kKG" secondAttribute="leading" id="xiM-Bk-FsP"/>
-                            <constraint firstItem="qbV-Wt-izx" firstAttribute="leading" secondItem="F4U-bz-S84" secondAttribute="leading" id="yTJ-WX-hW2"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="leading" secondItem="Ark-SF-jdH" secondAttribute="leadingMargin" id="5KU-YZ-QDT"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="top" secondItem="Ark-SF-jdH" secondAttribute="top" constant="20" symbolic="YES" id="61z-tb-ccn"/>
+                            <constraint firstItem="qbV-Wt-izx" firstAttribute="trailing" secondItem="F4U-bz-S84" secondAttribute="trailing" id="HKE-Aj-rKx"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="trailing" secondItem="Ngc-4K-kKG" secondAttribute="trailing" id="I4a-H9-f94"/>
+                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="leading" secondItem="qbV-Wt-izx" secondAttribute="leading" id="S17-vD-nvO"/>
+                            <constraint firstItem="F4U-bz-S84" firstAttribute="top" secondItem="qbV-Wt-izx" secondAttribute="bottom" constant="8" symbolic="YES" id="XOI-4D-HRv"/>
+                            <constraint firstItem="qbV-Wt-izx" firstAttribute="leading" secondItem="F4U-bz-S84" secondAttribute="leading" id="arH-81-wfi"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="trailing" secondItem="Ark-SF-jdH" secondAttribute="trailingMargin" id="dn9-dP-oJR"/>
+                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="top" secondItem="PfQ-CT-auO" secondAttribute="bottom" constant="8" symbolic="YES" id="eB6-S3-Oxy"/>
+                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="trailing" secondItem="qbV-Wt-izx" secondAttribute="trailing" id="nqx-iW-O8s"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="leading" secondItem="Ngc-4K-kKG" secondAttribute="leading" id="pc6-eC-Z2y"/>
+                            <constraint firstItem="qbV-Wt-izx" firstAttribute="top" secondItem="Ngc-4K-kKG" secondAttribute="bottom" constant="8" symbolic="YES" id="vKQ-iT-BOp"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JfZ-v5-D4y"/>
                     <connections>
                         <outlet property="albumLabel" destination="F4U-bz-S84" id="Rza-3a-vgH"/>
                         <outlet property="artistLabel" destination="qbV-Wt-izx" id="fKI-Ly-dLy"/>
                         <outlet property="nowPlayingLabel" destination="PfQ-CT-auO" id="dMK-ju-bmd"/>
                         <outlet property="songLabel" destination="Ngc-4K-kKG" id="O6n-yt-nCF"/>
+                        <segue destination="GUq-MJ-Zr1" kind="show" identifier="loginNow" id="0sy-m8-jF0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mi3-UI-PnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2736" y="-1055"/>
+            <point key="canvasLocation" x="2055" y="-1055"/>
         </scene>
         <!--Camera-->
         <scene sceneID="wg7-f3-ORb">
@@ -515,6 +517,7 @@
         <!--Music-->
         <scene sceneID="2k7-kC-EmR">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y07-Iv-AdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pvR-qS-oZg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Music" image="music" id="fRL-x9-CTj"/>
                     <toolbarItems/>
@@ -524,10 +527,9 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="GUq-MJ-Zr1" kind="relationship" relationship="rootViewController" id="T6z-Za-por"/>
+                        <segue destination="8kY-43-7lj" kind="relationship" relationship="rootViewController" id="gRx-oR-sgy"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y07-Iv-AdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1132" y="-1055"/>
         </scene>
@@ -542,4 +544,7 @@
         <image name="spotifyLogin" width="488" height="88"/>
         <image name="wellness" width="640" height="960"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R0o-M7-pf9"/>
+    </inferredMetricsTieBreakers>
 </document>

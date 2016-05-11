@@ -12,11 +12,11 @@
 		A51C77361CDC17D500FD455B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C77351CDC17D500FD455B /* SystemConfiguration.framework */; };
 		A51C773D1CDC1E8100FD455B /* SPTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */; };
 		A57A3D391CD2915A00F82427 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A3D381CD2915A00F82427 /* UserDefaults.swift */; };
-		A57CE34D1CE183FA0038EE38 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE34A1CE183FA0038EE38 /* next.png */; };
-		A57CE34E1CE183FA0038EE38 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE34B1CE183FA0038EE38 /* pause.png */; };
-		A57CE34F1CE183FA0038EE38 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE34C1CE183FA0038EE38 /* play.png */; };
 		A57CE3521CE2C7E80038EE38 /* bkgd-blue-long.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE3501CE2C7E80038EE38 /* bkgd-blue-long.png */; };
 		A57CE3531CE2C7E80038EE38 /* bkgd-green-long.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE3511CE2C7E80038EE38 /* bkgd-green-long.png */; };
+		A57CE35D1CE2DA460038EE38 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE35A1CE2DA460038EE38 /* next.png */; };
+		A57CE35E1CE2DA460038EE38 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE35B1CE2DA460038EE38 /* pause.png */; };
+		A57CE35F1CE2DA460038EE38 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE35C1CE2DA460038EE38 /* play.png */; };
 		A5C72A621CCFEDD100DABD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */; };
 		A5C72A641CCFEDD100DABD75 /* DrinkCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */; };
 		A5C72A661CCFEDD100DABD75 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A651CCFEDD100DABD75 /* CameraViewController.swift */; };
@@ -64,11 +64,11 @@
 		A51C77381CDC1B7700FD455B /* Weekender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weekender-Bridging-Header.h"; sourceTree = "<group>"; };
 		A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPTLoginViewController.swift; path = Weekender/SPTLoginViewController.swift; sourceTree = "<group>"; };
 		A57A3D381CD2915A00F82427 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
-		A57CE34A1CE183FA0038EE38 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = Weekender/Assets/next.png; sourceTree = "<group>"; };
-		A57CE34B1CE183FA0038EE38 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Weekender/Assets/pause.png; sourceTree = "<group>"; };
-		A57CE34C1CE183FA0038EE38 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Weekender/Assets/play.png; sourceTree = "<group>"; };
 		A57CE3501CE2C7E80038EE38 /* bkgd-blue-long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-long.png"; path = "Assets/bkgd-blue-long.png"; sourceTree = "<group>"; };
 		A57CE3511CE2C7E80038EE38 /* bkgd-green-long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-green-long.png"; path = "Assets/bkgd-green-long.png"; sourceTree = "<group>"; };
+		A57CE35A1CE2DA460038EE38 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = Weekender/Assets/next.png; sourceTree = "<group>"; };
+		A57CE35B1CE2DA460038EE38 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Weekender/Assets/pause.png; sourceTree = "<group>"; };
+		A57CE35C1CE2DA460038EE38 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Weekender/Assets/play.png; sourceTree = "<group>"; };
 		A5C72A5E1CCFEDD100DABD75 /* Weekender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weekender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCounterViewController.swift; sourceTree = "<group>"; };
@@ -180,9 +180,9 @@
 		A57CE3491CE183E90038EE38 /* ControlButtons */ = {
 			isa = PBXGroup;
 			children = (
-				A57CE34A1CE183FA0038EE38 /* next.png */,
-				A57CE34B1CE183FA0038EE38 /* pause.png */,
-				A57CE34C1CE183FA0038EE38 /* play.png */,
+				A57CE35A1CE2DA460038EE38 /* next.png */,
+				A57CE35B1CE2DA460038EE38 /* pause.png */,
+				A57CE35C1CE2DA460038EE38 /* play.png */,
 			);
 			name = ControlButtons;
 			sourceTree = "<group>";
@@ -213,6 +213,7 @@
 			children = (
 				A57CE3421CE16DA60038EE38 /* BackgroundAssets */,
 				A5E266E51CDFC00E0053E0CD /* Constants.swift */,
+				A57A3D381CD2915A00F82427 /* UserDefaults.swift */,
 				A57A3D3A1CD7AB6B00F82427 /* Camera */,
 				A5C72A911CCFEF0900DABD75 /* DrinkCounter */,
 				A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */,
@@ -258,7 +259,6 @@
 			isa = PBXGroup;
 			children = (
 				A5C72A9C1CCFFFE500DABD75 /* SettingsViewController.swift */,
-				A57A3D381CD2915A00F82427 /* UserDefaults.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -362,6 +362,11 @@
 					A5C72A5D1CCFEDD100DABD75 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = Y9EW699WH3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A5C72A731CCFEDD100DABD75 = {
 						CreatedOnToolsVersion = 7.3;
@@ -401,18 +406,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F15D841CDA37C400C38345 /* LaunchScreen.storyboard in Resources */,
+				A57CE35E1CE2DA460038EE38 /* pause.png in Resources */,
 				A5E266F21CDFE1660053E0CD /* shoot.png in Resources */,
+				A57CE35D1CE2DA460038EE38 /* next.png in Resources */,
 				A5E266EE1CDFE1550053E0CD /* exit.png in Resources */,
 				A57CE3531CE2C7E80038EE38 /* bkgd-green-long.png in Resources */,
 				A5E266E81CDFE1400053E0CD /* mobile2016.png in Resources */,
+				A57CE35F1CE2DA460038EE38 /* play.png in Resources */,
 				A5C72A6B1CCFEDD100DABD75 /* Assets.xcassets in Resources */,
-				A57CE34D1CE183FA0038EE38 /* next.png in Resources */,
-				A57CE34F1CE183FA0038EE38 /* play.png in Resources */,
 				A57CE3521CE2C7E80038EE38 /* bkgd-blue-long.png in Resources */,
 				A5E266F01CDFE15C0053E0CD /* flipCamera.png in Resources */,
 				A5E266EA1CDFE1460053E0CD /* searlesOverlay.png in Resources */,
 				A5F15D901CDA425900C38345 /* Main.storyboard in Resources */,
-				A57CE34E1CE183FA0038EE38 /* pause.png in Resources */,
 				A5E266EC1CDFE14B0053E0CD /* empty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

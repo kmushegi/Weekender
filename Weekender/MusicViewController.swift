@@ -23,6 +23,7 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
     
     let C = Constants()
+    let info = UserDefaults()
     
     @IBOutlet weak var nowPlayingLabel  : UILabel!
     @IBOutlet weak var songLabel        : UILabel!
@@ -32,16 +33,17 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     private var playPauseButton : UIButton?
     private var nextButton      : UIButton?
     
-    let c = Constants()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.spotifyUserCheck()
         self.timeToPlayMusic()
         setup()
     }
     
     func setup() {
+        self.navigationController?.navigationBarHidden = true
+        
         backgroundImage.image = UIImage(named: "bkgd-green-long")
         self.view.insertSubview(backgroundImage, atIndex: 0)
         
@@ -58,6 +60,7 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
         
         if player == nil && newUser == true {
+            print("Player is not ok. Need to start playing")
             self.playUsingSession(auth.session)
         } else {
             print("Player is ok")
@@ -73,7 +76,7 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
             self.renewToken(session)
         }
         
-        self.useLoggedInPermissions(c.AHSAlternative)
+        self.useLoggedInPermissions(C.AHSAlternative)
     }
     
     func spotifyUserCheck() {
@@ -95,7 +98,7 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
             }
         } else {
             newUser = true
-            //segue to log in
+            performSegueWithIdentifier("loginNow", sender: nil)
         }
     }
     
@@ -158,9 +161,11 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     }
     
     func audioStreaming(audioStreaming: SPTAudioStreamingController!, didChangeToTrack trackMetadata: [NSObject : AnyObject]!) {
+        
         let songTitle = trackMetadata["SPTAudioStreamingMetadataTrackName"]
         let songArtist = trackMetadata["SPTAudioStreamingMetadataArtistName"]
         let songAlbum = trackMetadata["SPTAudioStreamingMetadataAlbumName"]
+        let songDuration = trackMetadata["SPTAudioStreamingMetadataTrackDuration"]
         
         if(songTitle != nil) {
             songLabel!.text = "Song: \(songTitle!)"
@@ -171,16 +176,35 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
         if(songAlbum != nil){
             albumLabel!.text = "Album: \(songAlbum!)"
         }
+        
+        MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [MPMediaItemPropertyArtist : songArtist!, MPMediaItemPropertyAlbumTitle : songAlbum!, MPMediaItemPropertyTitle : songTitle!, MPMediaItemPropertyPlaybackDuration: songDuration!, MPNowPlayingInfoPropertyPlaybackRate : 1]
+    }
+    
+    func audioStreaming(audioStreaming: SPTAudioStreamingController!, didStopPlayingTrack trackUri: NSURL!) {
+        //MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = nil
+    }
+    
+    func playerControlButtonsY() -> CGFloat {
+        return albumLabel.frame.origin.y + albumLabel.bounds.height + 5
+    }
+    
+    func playerControlsSize() -> CGFloat {
+        let y = playerControlButtonsY()
+        let maxYSize = self.view.bounds.height - y - C.buttonBuffer
+        let maxXSize = self.view.bounds.midX - C.buttonBuffer * 2
+        let optimalSize = min(maxXSize, maxYSize)
+        return optimalSize
     }
     
     func addPlayPauseButton() {
         playPauseButton = UIButton(type: UIButtonType.Custom) as UIButton
-        let buttonImage = UIImage(named: c.pausePath) as UIImage?
+        let buttonImage = UIImage(named: C.pausePath) as UIImage?
         
-        let buttonX = c.takePhotoButtonBuffer
-        let buttonY = self.view.frame.height - c.playPauseButtonSize * 3 - c.takePhotoButtonBuffer
-        
-        playPauseButton!.frame = CGRectMake(buttonX,buttonY, c.takePhotoButtonSize * 2, c.takePhotoButtonSize * 2)
+        let buttonX = C.leftControlButtonX
+        let buttonY = playerControlButtonsY()
+        let size = playerControlsSize()
+
+        playPauseButton!.frame = CGRectMake(buttonX,buttonY, size, size)
         playPauseButton!.setImage(buttonImage, forState: UIControlState.Normal)
         playPauseButton!.addTarget(self, action: #selector(MusicViewController.playPauseTapped), forControlEvents: .TouchUpInside)
         self.view.addSubview(playPauseButton!)
@@ -188,12 +212,13 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     
     func addNextButton() {
         nextButton = UIButton(type: UIButtonType.Custom) as UIButton
-        let buttonImage = UIImage(named: c.nextPath) as UIImage?
+        let buttonImage = UIImage(named: C.nextPath) as UIImage?
         
-        let buttonX = self.view.frame.width - c.playPauseButtonSize * 2 - c.takePhotoButtonBuffer
-        let buttonY = self.view.frame.height - c.playPauseButtonSize * 3 - c.takePhotoButtonBuffer
+        let buttonY = playerControlButtonsY()
+        let size = playerControlsSize()
+        let buttonX = self.view.bounds.maxX - size - C.leftControlButtonX
         
-        nextButton!.frame = CGRectMake(buttonX,buttonY, c.takePhotoButtonSize * 2, c.takePhotoButtonSize * 2)
+        nextButton!.frame = CGRectMake(buttonX,buttonY, size, size)
         nextButton!.setImage(buttonImage, forState: UIControlState.Normal)
         nextButton!.addTarget(self, action: #selector(MusicViewController.nextTapped), forControlEvents: .TouchUpInside)
         self.view.addSubview(nextButton!)
@@ -201,12 +226,12 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     
     
     func playPauseTapped(sender: UIButton!) {
-        if(sender.currentImage == UIImage(named: c.pausePath)) {
-            sender.setImage(UIImage(named: c.playPath), forState: .Normal)
+        if(sender.currentImage == UIImage(named: C.pausePath)) {
+            sender.setImage(UIImage(named: C.playPath), forState: .Normal)
             player?.stop(nil)
         } else {
-            sender.setImage(UIImage(named: c.pausePath), forState: .Normal)
-            self.useLoggedInPermissions(c.AHSAlternative)
+            sender.setImage(UIImage(named: C.pausePath), forState: .Normal)
+            self.useLoggedInPermissions(C.AHSAlternative)
         }
     }
     
@@ -224,6 +249,7 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     override func remoteControlReceivedWithEvent(event: UIEvent?) {
         if event!.type == UIEventType.RemoteControl{
             if event!.subtype == UIEventSubtype.RemoteControlPause {
+                playPauseButton!.setImage(UIImage(named: C.playPath), forState: .Normal)
                 player?.stop(nil)
             } else if event!.subtype == UIEventSubtype.RemoteControlNextTrack {
                 print("Player Next")
@@ -236,6 +262,9 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
                     }
                 }
                 player!.skipNext(callback)
+            } else if event!.subtype == UIEventSubtype.RemoteControlPlay {
+                playPauseButton!.setImage(UIImage(named: C.pausePath), forState: .Normal)
+                useLoggedInPermissions(C.AHSAlternative)
             }
         }
     }

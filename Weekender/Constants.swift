@@ -71,6 +71,8 @@ class Constants {
     let kTokenSwapURL           = "http://localhost:1234/swap"
     let kTokenRefreshServiceURL = "http://localhost:1234/refresh"
     
+    let leftControlButtonX: CGFloat = 16
+    
     //MARK - Contacts, Wellness, Assistance
     let doneButtonX:            CGFloat = 5
     let doneButtonY:            CGFloat = 5

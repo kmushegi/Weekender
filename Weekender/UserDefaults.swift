@@ -13,21 +13,21 @@ class UserDefaults {
     private let userDefaults = NSUserDefaults.standardUserDefaults()
     
     private struct Key {
-        static let gender = "UserDefaults.Key.gender"
-        static let weight = "UserDefaults.Key.weight"
-        static let secondsPassed = "UserDefaults.Key.secondsPassed"
-        static let suspendTime = "UserDefaults.Key.suspendTime"
+        static let gender         = "UserDefaults.Key.gender"
+        static let weight         = "UserDefaults.Key.weight"
+        static let secondsPassed  = "UserDefaults.Key.secondsPassed"
+        static let suspendTime    = "UserDefaults.Key.suspendTime"
         static let consumedDrinks = "UserDefaults.Key.consumedDrinks"
-        static let currentBac = "UserDefaults.Key.currentBac"
+        static let currentBac     = "UserDefaults.Key.currentBac"
     }
     
     private struct DefaultUserSettings {
-        static let weight: Double = 175.0
-        static let gender: Int = 0
-        static let secondsPassed: Int = 0
-        static let suspendTime: Double = 0
-        static let consumedDrinks: Int = 0
-        static let currentBac: Double = 0.000
+        static let weight               : Double = 175.0
+        static let gender               : Int = 0
+        static let secondsPassed        : Int = 0
+        static let suspendTime          : Double = 0
+        static let consumedDrinks       : Int = 0
+        static let currentBac           : Double = 0.000
     }
     
     var weight: Double {

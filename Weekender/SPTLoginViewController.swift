@@ -22,12 +22,6 @@ class SPTLoginViewController: UIViewController, SPTAuthViewDelegate, SPTAudioStr
         self.navigationController?.setNavigationBarHidden(true, animated: true)
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SPTLoginViewController.dismiss), name: "loginSuccessful", object: nil)
-        
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
     }
     
     override func didReceiveMemoryWarning() {
