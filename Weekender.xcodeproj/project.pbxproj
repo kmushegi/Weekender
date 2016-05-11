@@ -17,6 +17,7 @@
 		A57CE35D1CE2DA460038EE38 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE35A1CE2DA460038EE38 /* next.png */; };
 		A57CE35E1CE2DA460038EE38 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE35B1CE2DA460038EE38 /* pause.png */; };
 		A57CE35F1CE2DA460038EE38 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE35C1CE2DA460038EE38 /* play.png */; };
+		A599D11D1CE3EC7600FFAB09 /* Acknowledgements in Resources */ = {isa = PBXBuildFile; fileRef = A599D11C1CE3EC7600FFAB09 /* Acknowledgements */; };
 		A5C72A621CCFEDD100DABD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */; };
 		A5C72A641CCFEDD100DABD75 /* DrinkCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */; };
 		A5C72A661CCFEDD100DABD75 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A651CCFEDD100DABD75 /* CameraViewController.swift */; };
@@ -69,6 +70,7 @@
 		A57CE35A1CE2DA460038EE38 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = Weekender/Assets/next.png; sourceTree = "<group>"; };
 		A57CE35B1CE2DA460038EE38 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Weekender/Assets/pause.png; sourceTree = "<group>"; };
 		A57CE35C1CE2DA460038EE38 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Weekender/Assets/play.png; sourceTree = "<group>"; };
+		A599D11C1CE3EC7600FFAB09 /* Acknowledgements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Acknowledgements; sourceTree = "<group>"; };
 		A5C72A5E1CCFEDD100DABD75 /* Weekender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weekender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCounterViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		A5C72A551CCFEDD100DABD75 = {
 			isa = PBXGroup;
 			children = (
+				A599D11C1CE3EC7600FFAB09 /* Acknowledgements */,
 				A51C77301CDC169C00FD455B /* Frameworks */,
 				A5C72A601CCFEDD100DABD75 /* Weekender */,
 				A5C72A771CCFEDD100DABD75 /* WeekenderTests */,
@@ -410,6 +413,7 @@
 				A5E266F21CDFE1660053E0CD /* shoot.png in Resources */,
 				A57CE35D1CE2DA460038EE38 /* next.png in Resources */,
 				A5E266EE1CDFE1550053E0CD /* exit.png in Resources */,
+				A599D11D1CE3EC7600FFAB09 /* Acknowledgements in Resources */,
 				A57CE3531CE2C7E80038EE38 /* bkgd-green-long.png in Resources */,
 				A5E266E81CDFE1400053E0CD /* mobile2016.png in Resources */,
 				A57CE35F1CE2DA460038EE38 /* play.png in Resources */,
