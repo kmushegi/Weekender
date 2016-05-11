@@ -11,12 +11,7 @@ import MediaPlayer
 
 class SPTLoginViewController: UIViewController, SPTAuthViewDelegate, SPTAudioStreamingPlaybackDelegate {
     
-    let kClientID = "4f47cb86c66d4d7592bb2c48f875ba68"
-    let kCallbackURL = "weekender://returnafterlogin"
-    //let kTokenSwapURL = "https://thawing-tundra-45046.herokuapp.com/swap"
-    //let kTokenRefreshServiceURL = "https://thawing-tundra-45046.herokuapp.com/refresh"
-    let kTokenSwapURL = "http://localhost:1234/swap"
-    let kTokenRefreshServiceURL = "http://localhost:1234/refresh"
+    let C = Constants()
 
     let auth = SPTAuth.defaultInstance()
     
@@ -41,10 +36,10 @@ class SPTLoginViewController: UIViewController, SPTAuthViewDelegate, SPTAudioStr
     }
     
     @IBAction func loginWithSpotify(sender: UIButton) {
-        auth.clientID = kClientID
-        auth.redirectURL = NSURL(string: kCallbackURL)
-        auth.tokenSwapURL = NSURL(string: kTokenSwapURL)
-        auth.tokenRefreshURL = NSURL(string: kTokenRefreshServiceURL)
+        auth.clientID = C.kClientID
+        auth.redirectURL = NSURL(string: C.kCallbackURL)
+        auth.tokenSwapURL = NSURL(string: C.kTokenSwapURL)
+        auth.tokenRefreshURL = NSURL(string: C.kTokenRefreshServiceURL)
         auth.requestedScopes = [SPTAuthStreamingScope]
         
         let spotifyAuthenticationVC = SPTAuthViewController.authenticationViewController()
@@ -74,7 +69,7 @@ class SPTLoginViewController: UIViewController, SPTAuthViewDelegate, SPTAudioStr
     }
     
     func authenticationViewControllerDidCancelLogin(authenticationViewController: SPTAuthViewController!) {
-        print("Login cancelled")
+        print(" Login cancelled")
     }
     
     func dismiss(sender: UIButton) {

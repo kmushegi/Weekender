@@ -15,22 +15,43 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     let auth = SPTAuth.defaultInstance()
     var session = SPTSession()
     
-    let kClientID = "4f47cb86c66d4d7592bb2c48f875ba68"
-    let kCallbackURL = "weekender://returnafterlogin"
-    //let kTokenSwapURL = "https://thawing-tundra-45046.herokuapp.com/swap"
-    //let kTokenRefreshServiceURL = "https://thawing-tundra-45046.herokuapp.com/refresh"
-    let kTokenSwapURL = "http://localhost:1234/swap"
-    let kTokenRefreshServiceURL = "http://localhost:1234/refresh"
-    
     var needsSessionRefresh = false
     var sessionIsRefreshing = false
     var newUser = false
     var refreshingTokens = false
     
+    let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
+    
+    let C = Constants()
+    
+    @IBOutlet weak var nowPlayingLabel  : UILabel!
+    @IBOutlet weak var songLabel        : UILabel!
+    @IBOutlet weak var artistLabel      : UILabel!
+    @IBOutlet weak var albumLabel       : UILabel!
+    
+    private var playPauseButton : UIButton?
+    private var nextButton      : UIButton?
+    
+    let c = Constants()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.spotifyUserCheck()
         self.timeToPlayMusic()
+        setup()
+    }
+    
+    func setup() {
+        backgroundImage.image = UIImage(named: "bkgd-green-long")
+        self.view.insertSubview(backgroundImage, atIndex: 0)
+        
+        nowPlayingLabel?.alpha = 0.75
+        songLabel?.alpha = 0.75
+        albumLabel?.alpha = 0.75
+        artistLabel?.alpha = 0.75
+        
+        addPlayPauseButton()
+        addNextButton()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -52,7 +73,7 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
             self.renewToken(session)
         }
         
-        self.useLoggedInPermissions("spotify:user:1250305260:playlist:2CQkLloZ3kSclgsrIP09sg")
+        self.useLoggedInPermissions(c.AHSAlternative)
     }
     
     func spotifyUserCheck() {
@@ -64,7 +85,6 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
             
             let sessionObjectData = seshObj as! NSData
             session = NSKeyedUnarchiver.unarchiveObjectWithData(sessionObjectData) as! SPTSession
-            print(seshObj)
             
             if !session.isValid() {
                 print("Session Invalid. Need Token Refresh")
@@ -81,7 +101,7 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
     
     func playUsingSession(session: SPTSession) {
         if player == nil {
-            player = SPTAudioStreamingController(clientId: kClientID)
+            player = SPTAudioStreamingController(clientId: C.kClientID)
             player!.playbackDelegate = self
             player!.diskCache = SPTDiskCache(capacity: 1024 * 1024 * 64)
         }
@@ -115,8 +135,8 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
         sessionIsRefreshing = true
         print("Refreshing Token")
         
-        auth.tokenSwapURL = NSURL(string: kTokenSwapURL)
-        auth.tokenRefreshURL = NSURL(string: kTokenRefreshServiceURL)
+        auth.tokenSwapURL = NSURL(string: C.kTokenSwapURL)
+        auth.tokenRefreshURL = NSURL(string: C.kTokenRefreshServiceURL)
         
         auth.renewSession(invalidSession, callback: { (error, session) -> Void in
             if error == nil {
@@ -137,10 +157,73 @@ class MusicViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
         userDefaults.synchronize()
     }
     
+    func audioStreaming(audioStreaming: SPTAudioStreamingController!, didChangeToTrack trackMetadata: [NSObject : AnyObject]!) {
+        let songTitle = trackMetadata["SPTAudioStreamingMetadataTrackName"]
+        let songArtist = trackMetadata["SPTAudioStreamingMetadataArtistName"]
+        let songAlbum = trackMetadata["SPTAudioStreamingMetadataAlbumName"]
+        
+        if(songTitle != nil) {
+            songLabel!.text = "Song: \(songTitle!)"
+        }
+        if(songArtist != nil) {
+            artistLabel!.text = "Artist: \(songArtist!)"
+        }
+        if(songAlbum != nil){
+            albumLabel!.text = "Album: \(songAlbum!)"
+        }
+    }
+    
+    func addPlayPauseButton() {
+        playPauseButton = UIButton(type: UIButtonType.Custom) as UIButton
+        let buttonImage = UIImage(named: c.pausePath) as UIImage?
+        
+        let buttonX = c.takePhotoButtonBuffer
+        let buttonY = self.view.frame.height - c.playPauseButtonSize * 3 - c.takePhotoButtonBuffer
+        
+        playPauseButton!.frame = CGRectMake(buttonX,buttonY, c.takePhotoButtonSize * 2, c.takePhotoButtonSize * 2)
+        playPauseButton!.setImage(buttonImage, forState: UIControlState.Normal)
+        playPauseButton!.addTarget(self, action: #selector(MusicViewController.playPauseTapped), forControlEvents: .TouchUpInside)
+        self.view.addSubview(playPauseButton!)
+    }
+    
+    func addNextButton() {
+        nextButton = UIButton(type: UIButtonType.Custom) as UIButton
+        let buttonImage = UIImage(named: c.nextPath) as UIImage?
+        
+        let buttonX = self.view.frame.width - c.playPauseButtonSize * 2 - c.takePhotoButtonBuffer
+        let buttonY = self.view.frame.height - c.playPauseButtonSize * 3 - c.takePhotoButtonBuffer
+        
+        nextButton!.frame = CGRectMake(buttonX,buttonY, c.takePhotoButtonSize * 2, c.takePhotoButtonSize * 2)
+        nextButton!.setImage(buttonImage, forState: UIControlState.Normal)
+        nextButton!.addTarget(self, action: #selector(MusicViewController.nextTapped), forControlEvents: .TouchUpInside)
+        self.view.addSubview(nextButton!)
+    }
+    
+    
+    func playPauseTapped(sender: UIButton!) {
+        if(sender.currentImage == UIImage(named: c.pausePath)) {
+            sender.setImage(UIImage(named: c.playPath), forState: .Normal)
+            player?.stop(nil)
+        } else {
+            sender.setImage(UIImage(named: c.pausePath), forState: .Normal)
+            self.useLoggedInPermissions(c.AHSAlternative)
+        }
+    }
+    
+    func nextTapped(sender: UIButton!) {
+        let callback: SPTErrorableOperationCallback = { error -> Void in
+            if(error != nil) {
+                print("Player Error")
+            } else {
+                print("Playing Next Song")
+            }
+        }
+        player!.skipNext(callback)
+    }
+    
     override func remoteControlReceivedWithEvent(event: UIEvent?) {
         if event!.type == UIEventType.RemoteControl{
             if event!.subtype == UIEventSubtype.RemoteControlPause {
-                print("Player Pause")
                 player?.stop(nil)
             } else if event!.subtype == UIEventSubtype.RemoteControlNextTrack {
                 print("Player Next")

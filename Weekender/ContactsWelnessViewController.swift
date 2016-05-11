@@ -101,11 +101,11 @@ class ContactsWellnessViewController: UIViewController {
     }
     
     @objc private func wellnessSegue(sender: UIButton!) {
-        presentViewController(WellnessTipsModalViewController(), animated: true, completion: nil)
+        performSegueWithIdentifier("wellnessSegue", sender: self)
     }
     
     @objc private func assistanceSegue(sender: UIButton!) {
-        presentViewController(AssistanceModalViewController(), animated: true, completion: nil)
+        performSegueWithIdentifier("assistanceSegue", sender: self)
     }
     
     private func setUpButton(button: UIButton) {

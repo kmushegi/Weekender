@@ -34,29 +34,6 @@ class CameraViewController: UIViewController, UIGestureRecognizerDelegate {
     
     let c = Constants()
     
-//    private struct ButtonSizes {
-//        static let takePhotoButtonSize: CGFloat = 75
-//        static let takePhotoButtonBuffer: CGFloat = 5
-//        
-//        static let flipCameraButtonSize: CGFloat = 50
-//        static let flipCameraButtonHorizontalBuffer: CGFloat = 5
-//        
-//        static let bringTabsBackButtonSize: CGFloat = 25
-//        static let bringTabsBackButtonBuffer: CGFloat = 10
-//    }
-//    
-//    private struct ButtonImagePaths {
-//        static let takePhotoPath = "shoot.png"
-//        static let flipPhotoPath = "flipCamera.png"
-//        static let tabsBackPhotoPath = "exit.png"
-//    }
-//    
-//    private struct OverlayPaths {
-//        static let empty = "empty.png"
-//        static let mobile2016 = "mobile2016.png"
-//        static let searles = "searlesOverlay.png"
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

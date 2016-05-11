@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -163,23 +162,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95M-Ll-wnO">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Playing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfQ-CT-auO">
+                                <rect key="frame" x="20" y="20" width="560" height="83"/>
+                                <color key="backgroundColor" red="0.0" green="0.8941090455976457" blue="0.97887325599999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="hhh-bo-bij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Ngc-4K-kKG">
+                                <rect key="frame" x="20" y="111" width="560" height="70"/>
+                                <color key="backgroundColor" red="0.1482117033418752" green="0.97887325599999997" blue="0.64902164580455413" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Kif-XX-M2q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="qbV-Wt-izx">
+                                <rect key="frame" x="20" y="189" width="560" height="70"/>
+                                <color key="backgroundColor" red="0.1482117033418752" green="0.97887325599999997" blue="0.64902164580455413" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="KFK-YO-a8w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="F4U-bz-S84">
+                                <rect key="frame" x="20" y="267" width="560" height="70"/>
+                                <color key="backgroundColor" red="0.1482117033418752" green="0.97887325599999997" blue="0.64902164580455413" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="kgU-FH-3Wm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="95M-Ll-wnO" firstAttribute="centerX" secondItem="Ark-SF-jdH" secondAttribute="centerX" id="TMF-O0-I4H"/>
-                            <constraint firstItem="95M-Ll-wnO" firstAttribute="centerY" secondItem="Ark-SF-jdH" secondAttribute="centerY" id="lV2-pv-qwv"/>
+                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="leading" secondItem="qbV-Wt-izx" secondAttribute="leading" id="AGE-Wm-eBj"/>
+                            <constraint firstItem="qbV-Wt-izx" firstAttribute="trailing" secondItem="F4U-bz-S84" secondAttribute="trailing" id="KjV-3t-ZD9"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="leading" secondItem="Ark-SF-jdH" secondAttribute="leadingMargin" id="RJc-lU-do4"/>
+                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="top" secondItem="PfQ-CT-auO" secondAttribute="bottom" constant="8" symbolic="YES" id="SWH-yu-X3K"/>
+                            <constraint firstItem="qbV-Wt-izx" firstAttribute="top" secondItem="Ngc-4K-kKG" secondAttribute="bottom" constant="8" symbolic="YES" id="XJK-9C-qbb"/>
+                            <constraint firstItem="F4U-bz-S84" firstAttribute="top" secondItem="qbV-Wt-izx" secondAttribute="bottom" constant="8" symbolic="YES" id="dev-Nz-RlT"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="trailing" secondItem="Ngc-4K-kKG" secondAttribute="trailing" id="dja-Df-9ll"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="trailing" secondItem="Ark-SF-jdH" secondAttribute="trailingMargin" id="h3c-z5-KEV"/>
+                            <constraint firstItem="Ngc-4K-kKG" firstAttribute="trailing" secondItem="qbV-Wt-izx" secondAttribute="trailing" id="jaD-KS-bdu"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="top" secondItem="Ark-SF-jdH" secondAttribute="top" constant="20" symbolic="YES" id="lx4-3x-VnP"/>
+                            <constraint firstItem="PfQ-CT-auO" firstAttribute="leading" secondItem="Ngc-4K-kKG" secondAttribute="leading" id="xiM-Bk-FsP"/>
+                            <constraint firstItem="qbV-Wt-izx" firstAttribute="leading" secondItem="F4U-bz-S84" secondAttribute="leading" id="yTJ-WX-hW2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumLabel" destination="F4U-bz-S84" id="Rza-3a-vgH"/>
+                        <outlet property="artistLabel" destination="qbV-Wt-izx" id="fKI-Ly-dLy"/>
+                        <outlet property="nowPlayingLabel" destination="PfQ-CT-auO" id="dMK-ju-bmd"/>
+                        <outlet property="songLabel" destination="Ngc-4K-kKG" id="O6n-yt-nCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mi3-UI-PnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740" y="-1055"/>
+            <point key="canvasLocation" x="2736" y="-1055"/>
         </scene>
         <!--Camera-->
         <scene sceneID="wg7-f3-ORb">
@@ -242,11 +291,13 @@
                     <tabBarItem key="tabBarItem" title="Contacts" image="phone" id="5Md-DT-zxW"/>
                     <connections>
                         <outlet property="contactsView" destination="cvg-7O-s1O" id="LC4-Wb-og1"/>
+                        <segue destination="Pkv-86-LFN" kind="presentation" identifier="wellnessSegue" id="lIa-I9-MPq"/>
+                        <segue destination="aUm-Li-nJd" kind="presentation" identifier="assistanceSegue" id="7ya-lf-Axa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6K8-aZ-uEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="539"/>
+            <point key="canvasLocation" x="1132" y="493"/>
         </scene>
         <!--Wellness Tips Modal View Controller-->
         <scene sceneID="e5V-ib-lBt">
@@ -259,7 +310,17 @@
                     <view key="view" contentMode="scaleToFill" id="8Qn-tL-Srn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wellness" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-ch-2E6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3qh-ch-2E6" firstAttribute="top" secondItem="8Qn-tL-Srn" secondAttribute="top" id="CeD-b3-u6g"/>
+                            <constraint firstItem="3qh-ch-2E6" firstAttribute="leading" secondItem="8Qn-tL-Srn" secondAttribute="leading" id="cH7-ua-FG7"/>
+                            <constraint firstAttribute="trailing" secondItem="3qh-ch-2E6" secondAttribute="trailing" id="dfA-pj-9L8"/>
+                            <constraint firstItem="3qh-ch-2E6" firstAttribute="bottom" secondItem="pY6-pV-h5K" secondAttribute="top" id="ozO-V3-BeY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qY7-jZ-yeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,7 +338,18 @@
                     <view key="view" contentMode="scaleToFill" id="K5k-wp-D8T">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assistance" translatesAutoresizingMaskIntoConstraints="NO" id="kLd-XA-U69">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kLd-XA-U69" firstAttribute="top" secondItem="K5k-wp-D8T" secondAttribute="top" id="DtS-4C-1iW"/>
+                            <constraint firstAttribute="trailing" secondItem="kLd-XA-U69" secondAttribute="trailing" id="Dtw-Jz-g9G"/>
+                            <constraint firstItem="kLd-XA-U69" firstAttribute="leading" secondItem="K5k-wp-D8T" secondAttribute="leading" id="YIo-ue-Trd"/>
+                            <constraint firstItem="kLd-XA-U69" firstAttribute="bottom" secondItem="bA7-83-Utf" secondAttribute="top" id="gQP-tP-4g6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l18-yZ-pTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -461,11 +533,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="assistance" width="640" height="960"/>
         <image name="camera" width="30" height="30"/>
         <image name="music" width="38" height="38"/>
         <image name="phone" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
         <image name="solocup" width="30" height="30"/>
         <image name="spotifyLogin" width="488" height="88"/>
+        <image name="wellness" width="640" height="960"/>
     </resources>
 </document>

@@ -10,13 +10,6 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    let kClientID = "4f47cb86c66d4d7592bb2c48f875ba68"
-    let kCallbackURL = "weekender://returnafterlogin"
-    //let kTokenSwapURL = "https://thawing-tundra-45046.herokuapp.com/swap"
-    //let kTokenRefreshServiceURL = "https://thawing-tundra-45046.herokuapp.com/refresh"
-    let kTokenSwapURL = "http://localhost:1234/swap"
-    let kTokenRefreshServiceURL = "http://localhost:1234/refresh"
 
     var window: UIWindow?
 

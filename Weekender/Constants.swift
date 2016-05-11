@@ -10,6 +10,15 @@ import Foundation
 
 class Constants {
     
+    //MARK - Random GUI Constants
+    let alpha: CGFloat = 0.75
+    
+    //MARK - BAC Constants
+    let femaleR = 0.55
+    let maleR = 0.68
+    let poundToGram = 453.6
+    let alcoholGramsPerDrink = 14.0
+    
     //MARK - Camera Constants
     let takePhotoButtonSize: CGFloat = 75
     let takePhotoButtonBuffer: CGFloat = 5
@@ -20,6 +29,8 @@ class Constants {
     let bringTabsBackButtonSize: CGFloat = 25
     let bringTabsBackButtonBuffer: CGFloat = 10
     
+    
+    //MARK - Image Paths
     let takePhotoPath = "shoot.png"
     let flipPhotoPath = "flipCamera.png"
     let tabsBackPhotoPath = "exit.png"
@@ -42,4 +53,22 @@ class Constants {
     let pubTitle = "Jack Magee's Pub"
     let wellnessTitle = "Wellness Tips"
     let assistanceTitle = "Assisting Others"
+    
+    //MARK - Music Constants
+    let playPath = "play.png"
+    let pausePath = "pause.png"
+    let nextPath = "next.png"
+    
+    let playPauseButtonSize: CGFloat = 75
+    
+    let AHSAlternative = "spotify:user:1250305260:playlist:2CQkLloZ3kSclgsrIP09sg"
+    
+    //MARK - Spotify API
+    let kClientID = "4f47cb86c66d4d7592bb2c48f875ba68"
+    let kCallbackURL = "weekender://returnafterlogin"
+    //let kTokenSwapURL = "https://thawing-tundra-45046.herokuapp.com/swap"
+    //let kTokenRefreshServiceURL = "https://thawing-tundra-45046.herokuapp.com/refresh"
+    let kTokenSwapURL = "http://localhost:1234/swap"
+    let kTokenRefreshServiceURL = "http://localhost:1234/refresh"
+    
 }

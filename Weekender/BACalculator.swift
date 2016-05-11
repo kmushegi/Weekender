@@ -13,19 +13,12 @@ class BACalculator {
     var weight = 0.0
     var gender = 0 //0 - male; 1 - female
     
-    struct Constants {
-        let femaleR = 0.55
-        let maleR = 0.68
-        let poundToGram = 453.6
-        let alcoholGramsPerDrink = 14.0
-    }
-    
-    var c = Constants()
+    var C = Constants()
     private let userInfo = UserDefaults()
     
     
     func poundsToGrams(weight: Double) -> Double {
-        return weight * c.poundToGram
+        return weight * C.poundToGram
     }
     
     func roundWith4DigitsOfPrecision(n: Double) -> Double {
@@ -41,16 +34,16 @@ class BACalculator {
     func computeBAC(drinks: Double, elapsedHours: Int) -> Double {
         fetchInformation()
 
-        let gramsOfAlcoholConsumed = c.alcoholGramsPerDrink * drinks
+        let gramsOfAlcoholConsumed = C.alcoholGramsPerDrink * drinks
         let weightInGrams = poundsToGrams(weight)
         
         weight = userInfo.weight
         
         var gc: Double = -1
         if(gender == 0) {
-            gc = c.maleR
+            gc = C.maleR
         } else {
-            gc = c.femaleR
+            gc = C.femaleR
         }
         
         let raw_number = weightInGrams * gc

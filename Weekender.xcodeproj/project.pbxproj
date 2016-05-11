@@ -12,15 +12,17 @@
 		A51C77361CDC17D500FD455B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C77351CDC17D500FD455B /* SystemConfiguration.framework */; };
 		A51C773D1CDC1E8100FD455B /* SPTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */; };
 		A57A3D391CD2915A00F82427 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A3D381CD2915A00F82427 /* UserDefaults.swift */; };
+		A57CE34D1CE183FA0038EE38 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE34A1CE183FA0038EE38 /* next.png */; };
+		A57CE34E1CE183FA0038EE38 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE34B1CE183FA0038EE38 /* pause.png */; };
+		A57CE34F1CE183FA0038EE38 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE34C1CE183FA0038EE38 /* play.png */; };
+		A57CE3521CE2C7E80038EE38 /* bkgd-blue-long.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE3501CE2C7E80038EE38 /* bkgd-blue-long.png */; };
+		A57CE3531CE2C7E80038EE38 /* bkgd-green-long.png in Resources */ = {isa = PBXBuildFile; fileRef = A57CE3511CE2C7E80038EE38 /* bkgd-green-long.png */; };
 		A5C72A621CCFEDD100DABD75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */; };
 		A5C72A641CCFEDD100DABD75 /* DrinkCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */; };
 		A5C72A661CCFEDD100DABD75 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A651CCFEDD100DABD75 /* CameraViewController.swift */; };
 		A5C72A6B1CCFEDD100DABD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A6A1CCFEDD100DABD75 /* Assets.xcassets */; };
 		A5C72A791CCFEDD100DABD75 /* WeekenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A781CCFEDD100DABD75 /* WeekenderTests.swift */; };
 		A5C72A841CCFEDD100DABD75 /* WeekenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A831CCFEDD100DABD75 /* WeekenderUITests.swift */; };
-		A5C72A961CCFF2BA00DABD75 /* bkgd-blue-long.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A931CCFF2BA00DABD75 /* bkgd-blue-long.png */; };
-		A5C72A971CCFF2BA00DABD75 /* bkgd-blue-short.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A941CCFF2BA00DABD75 /* bkgd-blue-short.png */; };
-		A5C72A981CCFF2BA00DABD75 /* bkgd-blue-short@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A951CCFF2BA00DABD75 /* bkgd-blue-short@2x.png */; };
 		A5C72A9A1CCFFF0300DABD75 /* BACalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A991CCFFF0300DABD75 /* BACalculator.swift */; };
 		A5C72A9D1CCFFFE500DABD75 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A9C1CCFFFE500DABD75 /* SettingsViewController.swift */; };
 		A5E266E41CDFBEB80053E0CD /* ContactsWelnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E266E31CDFBEB80053E0CD /* ContactsWelnessViewController.swift */; };
@@ -62,6 +64,11 @@
 		A51C77381CDC1B7700FD455B /* Weekender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weekender-Bridging-Header.h"; sourceTree = "<group>"; };
 		A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPTLoginViewController.swift; path = Weekender/SPTLoginViewController.swift; sourceTree = "<group>"; };
 		A57A3D381CD2915A00F82427 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		A57CE34A1CE183FA0038EE38 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = Weekender/Assets/next.png; sourceTree = "<group>"; };
+		A57CE34B1CE183FA0038EE38 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Weekender/Assets/pause.png; sourceTree = "<group>"; };
+		A57CE34C1CE183FA0038EE38 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Weekender/Assets/play.png; sourceTree = "<group>"; };
+		A57CE3501CE2C7E80038EE38 /* bkgd-blue-long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-long.png"; path = "Assets/bkgd-blue-long.png"; sourceTree = "<group>"; };
+		A57CE3511CE2C7E80038EE38 /* bkgd-green-long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-green-long.png"; path = "Assets/bkgd-green-long.png"; sourceTree = "<group>"; };
 		A5C72A5E1CCFEDD100DABD75 /* Weekender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weekender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C72A631CCFEDD100DABD75 /* DrinkCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCounterViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +81,6 @@
 		A5C72A7F1CCFEDD100DABD75 /* WeekenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C72A831CCFEDD100DABD75 /* WeekenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekenderUITests.swift; sourceTree = "<group>"; };
 		A5C72A851CCFEDD100DABD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5C72A931CCFF2BA00DABD75 /* bkgd-blue-long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-long.png"; path = "../../../bkgd-blue-long.png"; sourceTree = "<group>"; };
-		A5C72A941CCFF2BA00DABD75 /* bkgd-blue-short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-short.png"; path = "../../../bkgd-blue-short.png"; sourceTree = "<group>"; };
-		A5C72A951CCFF2BA00DABD75 /* bkgd-blue-short@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bkgd-blue-short@2x.png"; path = "../../../bkgd-blue-short@2x.png"; sourceTree = "<group>"; };
 		A5C72A991CCFFF0300DABD75 /* BACalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BACalculator.swift; sourceTree = "<group>"; };
 		A5C72A9C1CCFFFE500DABD75 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A5E266E31CDFBEB80053E0CD /* ContactsWelnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsWelnessViewController.swift; path = Weekender/ContactsWelnessViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 		A51C77371CDC1B4C00FD455B /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				A57CE3491CE183E90038EE38 /* CameraButtons */,
 				A51C77381CDC1B7700FD455B /* Weekender-Bridging-Header.h */,
 				A51C773C1CDC1E8100FD455B /* SPTLoginViewController.swift */,
 				A5FB86871CE026BB0043AC31 /* MusicViewController.swift */,
@@ -163,6 +168,25 @@
 			name = CameraAssets;
 			sourceTree = "<group>";
 		};
+		A57CE3421CE16DA60038EE38 /* BackgroundAssets */ = {
+			isa = PBXGroup;
+			children = (
+				A57CE3501CE2C7E80038EE38 /* bkgd-blue-long.png */,
+				A57CE3511CE2C7E80038EE38 /* bkgd-green-long.png */,
+			);
+			name = BackgroundAssets;
+			sourceTree = "<group>";
+		};
+		A57CE3491CE183E90038EE38 /* CameraButtons */ = {
+			isa = PBXGroup;
+			children = (
+				A57CE34A1CE183FA0038EE38 /* next.png */,
+				A57CE34B1CE183FA0038EE38 /* pause.png */,
+				A57CE34C1CE183FA0038EE38 /* play.png */,
+			);
+			name = CameraButtons;
+			sourceTree = "<group>";
+		};
 		A5C72A551CCFEDD100DABD75 = {
 			isa = PBXGroup;
 			children = (
@@ -187,8 +211,8 @@
 		A5C72A601CCFEDD100DABD75 /* Weekender */ = {
 			isa = PBXGroup;
 			children = (
+				A57CE3421CE16DA60038EE38 /* BackgroundAssets */,
 				A5E266E51CDFC00E0053E0CD /* Constants.swift */,
-				A5C72A921CCFF2A300DABD75 /* DrinkCounterAssets */,
 				A57A3D3A1CD7AB6B00F82427 /* Camera */,
 				A5C72A911CCFEF0900DABD75 /* DrinkCounter */,
 				A5C72A611CCFEDD100DABD75 /* AppDelegate.swift */,
@@ -228,16 +252,6 @@
 				A5C72A991CCFFF0300DABD75 /* BACalculator.swift */,
 			);
 			name = DrinkCounter;
-			sourceTree = "<group>";
-		};
-		A5C72A921CCFF2A300DABD75 /* DrinkCounterAssets */ = {
-			isa = PBXGroup;
-			children = (
-				A5C72A931CCFF2BA00DABD75 /* bkgd-blue-long.png */,
-				A5C72A941CCFF2BA00DABD75 /* bkgd-blue-short.png */,
-				A5C72A951CCFF2BA00DABD75 /* bkgd-blue-short@2x.png */,
-			);
-			name = DrinkCounterAssets;
 			sourceTree = "<group>";
 		};
 		A5C72A9B1CCFFFC600DABD75 /* Settings */ = {
@@ -389,14 +403,16 @@
 				A5F15D841CDA37C400C38345 /* LaunchScreen.storyboard in Resources */,
 				A5E266F21CDFE1660053E0CD /* shoot.png in Resources */,
 				A5E266EE1CDFE1550053E0CD /* exit.png in Resources */,
-				A5C72A981CCFF2BA00DABD75 /* bkgd-blue-short@2x.png in Resources */,
-				A5C72A971CCFF2BA00DABD75 /* bkgd-blue-short.png in Resources */,
+				A57CE3531CE2C7E80038EE38 /* bkgd-green-long.png in Resources */,
 				A5E266E81CDFE1400053E0CD /* mobile2016.png in Resources */,
 				A5C72A6B1CCFEDD100DABD75 /* Assets.xcassets in Resources */,
+				A57CE34D1CE183FA0038EE38 /* next.png in Resources */,
+				A57CE34F1CE183FA0038EE38 /* play.png in Resources */,
+				A57CE3521CE2C7E80038EE38 /* bkgd-blue-long.png in Resources */,
 				A5E266F01CDFE15C0053E0CD /* flipCamera.png in Resources */,
 				A5E266EA1CDFE1460053E0CD /* searlesOverlay.png in Resources */,
 				A5F15D901CDA425900C38345 /* Main.storyboard in Resources */,
-				A5C72A961CCFF2BA00DABD75 /* bkgd-blue-long.png in Resources */,
+				A57CE34E1CE183FA0038EE38 /* pause.png in Resources */,
 				A5E266EC1CDFE14B0053E0CD /* empty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,12 +595,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Weekender/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = bowdoin.edu.2505.mushegian.Weekender;
@@ -600,12 +617,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Weekender/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = bowdoin.edu.2505.mushegian.Weekender;

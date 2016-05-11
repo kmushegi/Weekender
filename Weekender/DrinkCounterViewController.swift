@@ -29,6 +29,8 @@ class DrinkCounterViewController: UIViewController {
     
     let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
     
+    let C = Constants()
+    
     func setup() {
         
         backgroundImage.image = UIImage(named: "bkgd-blue-long")
@@ -42,12 +44,12 @@ class DrinkCounterViewController: UIViewController {
         
         drinkCount.numberOfLines = 1
         drinkCount.text = stepper.value.description
-        drinkLabel.alpha = 0.75
+        drinkLabel.alpha = C.alpha
         
         bac.numberOfLines = 1
         bac.adjustsFontSizeToFitWidth = true
         bac.alpha = 0.90
-        bacLabel.alpha = 0.75
+        bacLabel.alpha = C.alpha
         
         timerLabel.text = String(format:"%02i:%02i:%02i", 0, 0, 0)
     }
