@@ -14,6 +14,7 @@ class ContactsWellnessViewController: UIViewController {
     
     var securityEmergencyButton     : UIButton?
     var securityNonEmergencyButton  : UIButton?
+    var shuttleButton               : UIButton?
     var pubButton                   : UIButton?
     var wellnessTipsButton          : UIButton?
     var assistingOthersButton       : UIButton?
@@ -30,16 +31,17 @@ class ContactsWellnessViewController: UIViewController {
         backgroundImage.image = UIImage(named: "bkgd-blue-long")
         self.view.insertSubview(backgroundImage, atIndex: 0)
         
-        contactsView.contentSize = self.view.frame.size
-        self.view.addSubview(contactsView)
-        
         addSecurityEmergency()
         addSecurityNonEmergency()
+        addShuttle()
         addPub()
         addWellness()
         addAssistingOthers()
+        
+        contactsView.contentSize.height = self.view.frame.size.height + ((self.tabBarController?.tabBar.frame.height)! * 2)
+        self.view.addSubview(contactsView)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,6 +63,15 @@ class ContactsWellnessViewController: UIViewController {
         securityNonEmergencyButton?.setTitle(C.securityNonEmergencyTitle, forState: .Normal)
         securityNonEmergencyButton?.addTarget(self, action: #selector(ContactsWellnessViewController.callSecurityNonEmergency), forControlEvents: .TouchUpInside)
         contactsView.addSubview(securityNonEmergencyButton!)
+    }
+    
+    func addShuttle() {
+        shuttleButton = UIButton()
+        setUpButton(shuttleButton!)
+        shuttleButton!.backgroundColor = UIColor.grayColor()
+        shuttleButton?.setTitle(C.shuttleTitle, forState: .Normal)
+        shuttleButton?.addTarget(self, action: #selector(ContactsWellnessViewController.callShuttle), forControlEvents: .TouchUpInside)
+        contactsView.addSubview(shuttleButton!)
     }
     
     func addPub() {
@@ -89,7 +100,6 @@ class ContactsWellnessViewController: UIViewController {
         assistingOthersButton?.setTitle(C.assistanceTitle, forState: .Normal)
         assistingOthersButton?.addTarget(self, action: #selector(ContactsWellnessViewController.assistanceSegue), forControlEvents: .TouchUpInside)
         contactsView.addSubview(assistingOthersButton!)
-        
     }
     
     @objc private func callSecurityEmergency(sender: UIButton!) {
@@ -98,6 +108,10 @@ class ContactsWellnessViewController: UIViewController {
     
     @objc private func callSecurityNonEmergency(sender: UIButton!) {
         callNumber(C.securityNonEmergency)
+    }
+    
+    @objc private func callShuttle(sender: UIButton!) {
+        callNumber(C.shuttle)
     }
     
     @objc private func callPub(sender: UIButton!) {

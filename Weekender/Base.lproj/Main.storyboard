@@ -517,7 +517,6 @@
         <!--Music-->
         <scene sceneID="2k7-kC-EmR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y07-Iv-AdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pvR-qS-oZg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Music" image="music" id="fRL-x9-CTj"/>
                     <toolbarItems/>
@@ -530,6 +529,7 @@
                         <segue destination="8kY-43-7lj" kind="relationship" relationship="rootViewController" id="gRx-oR-sgy"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y07-Iv-AdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1132" y="-1055"/>
         </scene>

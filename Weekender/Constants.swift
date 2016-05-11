@@ -47,9 +47,11 @@ class Constants {
     let securityEmergency    = "2077253500"
     let securityNonEmergency = "2077253314"
     let pub                  = "2077253430"
+    let shuttle              = "2077253337"
     
     let securityEmergencyTitle    = "Bowdoin Security \n(EMERGENCY)"
     let securityNonEmergencyTitle = "Bowdoin Security \n(Non-Emergency)"
+    let shuttleTitle              = "Bowdoin Shuttle"
     let pubTitle                  = "Jack Magee's Pub"
     let wellnessTitle             = "Wellness Tips"
     let assistanceTitle           = "Assisting Others"
