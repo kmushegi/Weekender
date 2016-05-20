@@ -4,6 +4,6 @@ This application was created as part of the Mobile Computing class, taught by Pr
 
 Development is ongoing.
 
-In order to start up the  heroku server to enable Spotify streaming input the following command into the terminal.
+In order to start up the  heroku server to enable Spotify streaming input the following command into the terminal inside SpotifyTokenSwap directory.
 
 > heroku ps:scale web=1
