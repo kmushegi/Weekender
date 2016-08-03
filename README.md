@@ -14,8 +14,9 @@ Fast-Contacts     | Settings          | Screenshot Info
 
 This application was created as part of the Mobile Computing class, taught by Professor Eric Chown at Bowdoin College during the Spring 2016 semester.
 
-Development is paused due to RoboCup 2016. Needs minor graphics clean up. If you would be interested in replacing the existing graphics (obtained through the internet) with your own please email me at kmushegi [at] bowdoin [dot] edu.
-
 #How To#
 In order to start up the  heroku server to enable Spotify streaming input the following command into the terminal inside SpotifyTokenSwap directory.
 > heroku ps:scale web=1
+
+#To-Do#
+ Needs minor graphics clean up. If you would be interested in replacing the existing graphics (obtained through the internet) with your own please email me at kmushegi [at] bowdoin [dot] edu.
