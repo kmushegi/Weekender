@@ -7,9 +7,9 @@ BAC Counter                   | Spotify Streaming         | Snapchat-like Camera
 ![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/XHw3NAi.png)| ![](http://i.imgur.com/n2cqZsF.png)
 
 
-Fast-Contacts     | Settings          |
-----------------  | ----------------  |
-![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/NEyrUJ2.png)
+Fast-Contacts     | Settings          | Screenshot Info
+----------------  | ----------------  | ---------------------
+![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/NEyrUJ2.png) | Screenshots were made using the iOS Simulator
 
 
 This application was created as part of the Mobile Computing class, taught by Professor Eric Chown at Bowdoin College during the Spring 2016 semester.
