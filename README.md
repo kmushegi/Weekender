@@ -7,8 +7,8 @@ BAC Counter                   | Spotify Streaming         | Snapchat-like Camera
 ![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/XHw3NAi.png)| ![](http://i.imgur.com/n2cqZsF.png)
 
 
-Fast-Contacts     | Settings
-----------------  | ----------------
+Fast-Contacts     | Settings          |
+----------------  | ----------------  |
 ![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/NEyrUJ2.png)
 
 
