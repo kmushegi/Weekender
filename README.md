@@ -4,7 +4,7 @@ Weekender serves as an ultimate weekend companion to its users; it provides mult
 
 BAC Counter                   | Spotify Streaming         | Snapchat-like Camera            
 -----------------------       | -----------------         | --------------------  
-![](http://imgur.com/jMhrRfj) | ![](http://bit.ly/1ofxV64)| 
+![](http://i.imgur.com/jMhrRfj.png) | ![](http://bit.ly/1ofxV64)| 
 
 
 
