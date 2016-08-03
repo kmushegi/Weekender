@@ -2,14 +2,14 @@
 
 Weekender serves as an ultimate weekend companion to its users; it provides multiple fun and useful functionalities such as Blood Alcohol Level counter, Spotify Music Player, Snapchat-like Camera with various filters and a fast-contacts page.
 
-BAC Counter                   | Spotify Streaming         | Snapchat-like Camera | Fast-Contacts
------------------------       | -----------------         | -------------------- | --------------  
-![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/XHw3NAi.png)| ![](http://i.imgur.com/n2cqZsF.png)|![](http://i.imgur.com/jMhrRfj.png)
+BAC Counter                   | Spotify Streaming         | Snapchat-like Camera 
+-----------------------       | -----------------         | -------------------- 
+![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/XHw3NAi.png)| ![](http://i.imgur.com/n2cqZsF.png)
 
 
-Hello   |What
---------|-----
-
+Fast-Contacts     | Settings
+----------------  | ----------------
+![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/NEyrUJ2.png)
 
 
 This application was created as part of the Mobile Computing class, taught by Professor Eric Chown at Bowdoin College during the Spring 2016 semester.
