@@ -12,8 +12,6 @@ Fast-Contacts     | Settings          | Screenshot Info
 ![](http://i.imgur.com/jMhrRfj.png) | ![](http://i.imgur.com/NEyrUJ2.png) | Screenshots were made using the iOS Simulator
 
 
-This application was created as part of the Mobile Computing class, taught by Professor Eric Chown at Bowdoin College during the Spring 2016 semester.
-
 #How To#
 In order to start up the  heroku server to enable Spotify streaming input the following command into the terminal inside SpotifyTokenSwap directory.
 > heroku ps:scale web=1
